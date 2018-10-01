@@ -1,0 +1,7 @@
+Probability Estimates for Multi-class Classification by Pairwise Coupling:
+https://artax.karlin.mff.cuni.cz/r-help/library/kernlab/html/
+
+https://cran.r-project.org/web/packages/kernlab/kernlab.pdf
+https://cran.r-project.org/web/packages/kernlab/index.html
+
+https://rdrr.io/cran/kernlab/src/R/couplers.R

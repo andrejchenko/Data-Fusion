@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!-- saved from url=(0059)http://svr-www.eng.cam.ac.uk/~kkc21/thesis_main/node25.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Pairwise Coupling and Pairwise with Majority Voting</title>
+<meta name="description" content="Pairwise Coupling and Pairwise with Majority Voting">
+<meta name="keywords" content="thesis_main">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<link rel="STYLESHEET" href="./Pairwise Coupling and Pairwise with Majority Voting_files/thesis_main.css">
+</head>
+<body lang="EN">
+ <a name="tex2html449" href="http://svr-www.eng.cam.ac.uk/~kkc21/thesis_main/node26.html"><img width="37" height="24" align="BOTTOM" alt="next" src="./Pairwise Coupling and Pairwise with Majority Voting_files/next_motif.gif"></a> <a name="tex2html447" href="http://svr-www.eng.cam.ac.uk/~kkc21/thesis_main/node23.html"><img width="26" height="24" align="BOTTOM" alt="up" src="./Pairwise Coupling and Pairwise with Majority Voting_files/up_motif.gif"></a> <a name="tex2html441" href="http://svr-www.eng.cam.ac.uk/~kkc21/thesis_main/node24.html"><img width="63" height="24" align="BOTTOM" alt="previous" src="./Pairwise Coupling and Pairwise with Majority Voting_files/previous_motif.gif"></a> <a name="tex2html451" href="http://svr-www.eng.cam.ac.uk/~kkc21/thesis_main/node4.html"><img width="65" height="24" align="BOTTOM" alt="contents" src="./Pairwise Coupling and Pairwise with Majority Voting_files/contents_motif.gif"></a>  <br>
+<b> Next:</b> <a name="tex2html450" href="http://svr-www.eng.cam.ac.uk/~kkc21/thesis_main/node26.html">Extending SVM to solve </a>
+<b>Up:</b> <a name="tex2html448" href="http://svr-www.eng.cam.ac.uk/~kkc21/thesis_main/node23.html">Multi-Class Support Vector Machine</a>
+<b> Previous:</b> <a name="tex2html442" href="http://svr-www.eng.cam.ac.uk/~kkc21/thesis_main/node24.html">Combination of 1-to-rest classifiers</a>
+<br> <p>
+</p><h1><a name="SECTION00720000000000000000">Pairwise Coupling and Pairwise with Majority Voting</a></h1>
+<p>
+<a name="pairwise">&nbsp;</a>
+</p><p>
+The schemes require a binary classifier for each possible pair of
+classes. The decision function of the SVM classifier for
+ <img width="12" height="14" align="MIDDLE" alt="tex2html_wrap_inline2162" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img127.gif"> -to- <img width="13" height="14" align="MIDDLE" alt="tex2html_wrap_inline2164" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img128.gif">  and  <img width="13" height="14" align="MIDDLE" alt="tex2html_wrap_inline2164" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img128.gif"> -to- <img width="12" height="14" align="MIDDLE" alt="tex2html_wrap_inline2162" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img127.gif">  
+has reflectional symmetry in the zero plane. Hence only
+one of these pairs 
+of classifier is needed. The total number of classifiers for a
+<i>K</i>-class problem will then be <i>K</i>(<i>K</i>-1)/2. The training data for each
+classifier is a subset of the available training data, and it will
+only contain the data for the two involved classes. The data will be
+reliable accordingly, i.e. one will be labelled as +1 while the other
+as -1.
+</p><p>
+These classifiers will now be combined with some voting scheme to give
+the final classification results.
+The voting schemes need the pairwise probability,
+i.e. the probability of <i>x</i> belong to class <i>i</i> given that it can be
+only belong to class <i>i</i> or <i>j</i> (Eqn. <a href="http://svr-www.eng.cam.ac.uk/~kkc21/thesis_main/node25.html#pairwise_prob"><img align="BOTTOM" alt="gif" src="./Pairwise Coupling and Pairwise with Majority Voting_files/cross_ref_motif.gif"></a>, note that
+the class membership is mutually exclusive).
+The output value of the decision function
+(Eqn. <a href="http://svr-www.eng.cam.ac.uk/~kkc21/thesis_main/node20.html#decision_function"><img align="BOTTOM" alt="gif" src="./Pairwise Coupling and Pairwise with Majority Voting_files/cross_ref_motif.gif"></a>) of an SVM is not an 
+estimate of the p.d.f. of a class or the pairwise probability.
+There are two ways to estimate the required information from the output
+of the SVM decision function.
+</p><p>
+</p><p><a name="pairwise_prob">&nbsp;</a> <img width="515" height="38" align="BOTTOM" alt="equation853" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img129.gif"> </p><p>
+</p><p>
+</p><ul><li> <b>Estimates a Gaussian p.d.f. for each class in the pairwise
+      classier</b><br> 
+      This is proposed by [<a href="http://svr-www.eng.cam.ac.uk/~kkc21/thesis_main/node38.html#Pairwise">Hastie and Tibshirani, 1996</a>]. The Gaussian p.d.f. of a
+      particular class is
+      estimated from the output values of the decision function,
+      <i>f</i>(<i>x</i>), for all <i>x</i> in that class. The 
+      centroid and radius of the Gaussian is the mean and standard
+      deviation of of <i>f</i>(<i>x</i>) respectively.
+<p>
+      There are two p.d.f.s, one for each class, for every pairwise
+      classifier. With these two p.d.f.s, the pairwise probability can
+      be computed directly (Eqn. <a href="http://svr-www.eng.cam.ac.uk/~kkc21/thesis_main/node25.html#comp_pair"><img align="BOTTOM" alt="gif" src="./Pairwise Coupling and Pairwise with Majority Voting_files/cross_ref_motif.gif"></a>).
+</p><p>
+</p><p><a name="comp_pair">&nbsp;</a> <img width="500" height="39" align="BOTTOM" alt="equation862" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img130.gif"> </p><p>
+</p><p>
+where  <img width="34" height="24" align="MIDDLE" alt="tex2html_wrap_inline2192" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img131.gif">  is the p.d.f. for class <i>i</i> they are defined as
+( <img width="53" height="24" align="MIDDLE" alt="tex2html_wrap_inline2196" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img132.gif">  is the Gaussian density with mean <i>m</i> and standard
+deviation  <img width="8" height="7" align="BOTTOM" alt="tex2html_wrap_inline2200" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img133.gif"> ):
+</p><p>
+</p><p><a name="pdf">&nbsp;</a> <img width="500" height="66" align="BOTTOM" alt="eqnarray866" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img134.gif"> </p><p>
+</p><p>
+In Eqn. <a href="http://svr-www.eng.cam.ac.uk/~kkc21/thesis_main/node25.html#pdf"><img align="BOTTOM" alt="gif" src="./Pairwise Coupling and Pairwise with Majority Voting_files/cross_ref_motif.gif"></a>,  <img width="17" height="14" align="MIDDLE" alt="tex2html_wrap_inline2202" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img135.gif"> ,  <img width="11" height="14" align="MIDDLE" alt="tex2html_wrap_inline2204" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img136.gif">  is the mean and standard deviation of <i>f</i>(<i>x</i>)
+respectively (<i>x</i> is in class <i>i</i>). Figure <a href="http://svr-www.eng.cam.ac.uk/~kkc21/thesis_main/node25.html#2pdf"><img align="BOTTOM" alt="gif" src="./Pairwise Coupling and Pairwise with Majority Voting_files/cross_ref_motif.gif"></a> show an example
+pair of p.d.f. estimates and the 
+corresponding pairwise probabilities. The classification boundary,
+according to these pairwise probabilities, need not be at <i>f</i>(<i>x</i>)=0.
+</p><p>
+</p><p><a name="878">&nbsp;</a><a name="2pdf">&nbsp;</a> <img width="384" height="326" align="BOTTOM" alt="figure871" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img137.gif"> <br>
+<strong>Figure:</strong> The p.d.f. estimate and the corresponding pairwise probabilities<br>
+</p><p></p></li><li> <b>Estimates the pairwise probability directly</b><br> 
+      This is much simpler compared to the previous method. If only the
+      pairwise probabilities are required, then they can be estimated
+      directly without obtaining a proper p.d.f. estimate. A pseudo
+      p.d.f. can be use to estimate the pairwise probabilities. The
+      choice of the pseudo p.d.f. is based on the following factors:
+<p>
+</p><ul><li> The classification boundary of a SVM classifier is at <i>f</i>(<i>x</i>)=0
+      and the classification confidence increases with the magnitude of
+      the decision function.</li><li> The pairwise probability is a sigmoid function with value
+      from 0 to 1 and the decision boundary is the point where the
+      value of the sigmoid function is 0.5.
+</li></ul>
+<p>
+Based on these factors, the obvious choice for the pseudo p.d.f. is
+ <img width="31" height="15" align="BOTTOM" alt="tex2html_wrap_inline2222" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img138.gif"> . Figure <a href="http://svr-www.eng.cam.ac.uk/~kkc21/thesis_main/node25.html#2ppdf"><img align="BOTTOM" alt="gif" src="./Pairwise Coupling and Pairwise with Majority Voting_files/cross_ref_motif.gif"></a> show the selected pseudo p.d.f. and the
+corresponding pairwise probabilities. The pairwise probabilities
+estimated with this method have a number of significant differences
+compare to those obtained from the previous method.
+</p><p>
+</p><ul><li> This method is simpler and faster to compute. It also does not
+      make any assumption about the accuracy of the distribution of
+      the value of <i>f</i>(<i>x</i>). The previous method needs sufficient data to
+      estimate the p.d.f. accurately.</li><li> It represents the decision boundary of the SVM accurately, since
+      the decision boundary is always at <i>f</i>(<i>x</i>)=0.
+</li></ul>
+<p>
+</p><p><a name="895">&nbsp;</a><a name="2ppdf">&nbsp;</a> <img width="385" height="326" align="BOTTOM" alt="figure888" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img139.gif"> <br>
+<strong>Figure:</strong> The pseudo p.d.f. and the corresponding pairwise probabilities<br>
+</p><p></p></li></ul>
+<p>
+There are three different ways to combine these pairwise probability
+estimation to vote for the most probable class. These voting schemes
+are described in [<a href="http://svr-www.eng.cam.ac.uk/~kkc21/thesis_main/node38.html#Pairwise">Hastie and Tibshirani, 1996</a>] and will be outlined briefly below:
+</p><p>
+</p><ul><li> Using the approach suggested by [<a href="http://svr-www.eng.cam.ac.uk/~kkc21/thesis_main/node38.html#Friedman1">Friedman, 1996</a>], i.e. assign
+      the unknown data points to the class that wins the most pairwise
+      comparisons. This approach can be more formally defined as
+      follow:
+<p>
+      </p><ul><li> Firstly, define  <img width="97" height="27" align="MIDDLE" alt="tex2html_wrap_inline2228" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img140.gif">  as the pairwise
+            probabilities as in Eqn. <a href="http://svr-www.eng.cam.ac.uk/~kkc21/thesis_main/node25.html#pairwise_prob"><img align="BOTTOM" alt="gif" src="./Pairwise Coupling and Pairwise with Majority Voting_files/cross_ref_motif.gif"></a>.</li><li> Then the class label for testing data <i>x</i> is then given
+            by Eqn. <a href="http://svr-www.eng.cam.ac.uk/~kkc21/thesis_main/node25.html#d_max"><img align="BOTTOM" alt="gif" src="./Pairwise Coupling and Pairwise with Majority Voting_files/cross_ref_motif.gif"></a>.
+<p>
+      </p><p><a name="d_max">&nbsp;</a> <img width="500" height="38" align="BOTTOM" alt="equation906" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img141.gif"> </p><p>
+      where,
+      </p><p><a name="threshold">&nbsp;</a> <img width="500" height="50" align="BOTTOM" alt="equation914" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img142.gif"> </p><p></p></li></ul></li><li> The posterior probability of class <i>i</i> can be obtained using a
+      simple non-iterative estimation from the averages of  <img width="17" height="15" align="MIDDLE" alt="tex2html_wrap_inline2234" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img143.gif"> ,
+      Eqn. <a href="http://svr-www.eng.cam.ac.uk/~kkc21/thesis_main/node25.html#average"><img align="BOTTOM" alt="gif" src="./Pairwise Coupling and Pairwise with Majority Voting_files/cross_ref_motif.gif"></a>. These estimates are derived as an
+      approximation to Eqn. <a href="http://svr-www.eng.cam.ac.uk/~kkc21/thesis_main/node25.html#identity"><img align="BOTTOM" alt="gif" src="./Pairwise Coupling and Pairwise with Majority Voting_files/cross_ref_motif.gif"></a>, by approximating  <img width="51" height="23" align="MIDDLE" alt="tex2html_wrap_inline2236" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img144.gif"> 
+      as 2/<i>K</i>.
+<p>
+      </p><p><a name="average">&nbsp;</a> <img width="500" height="38" align="BOTTOM" alt="equation926" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img145.gif"> </p><p>
+</p><p>
+      </p><p><a name="identity">&nbsp;</a> <img width="500" height="45" align="BOTTOM" alt="equation934" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img146.gif"> </p><p>
+</p><p>
+      Using this approximation, the decision rule
+      for the <i>K</i>-class problem can then label <i>x</i> with the class with
+      the largest  <img width="17" height="28" align="MIDDLE" alt="tex2html_wrap_inline2244" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img147.gif"> .
+</p><p>
+      </p><p> <img width="500" height="25" align="BOTTOM" alt="equation941" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img148.gif"> </p><p></p></li><li> Estimate a set of posterior probabilities,  <img width="14" height="30" align="MIDDLE" alt="tex2html_wrap_inline2246" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img149.gif"> , that are
+      compatible with the given  <img width="17" height="15" align="MIDDLE" alt="tex2html_wrap_inline2234" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img143.gif"> , i.e. the condition in Eqn.
+      <a href="http://svr-www.eng.cam.ac.uk/~kkc21/thesis_main/node25.html#compatible"><img align="BOTTOM" alt="gif" src="./Pairwise Coupling and Pairwise with Majority Voting_files/cross_ref_motif.gif"></a> is satisfied for <i>i</i>,<i>j</i> = 1,...,<i>K</i> and  <img width="34" height="25" align="MIDDLE" alt="tex2html_wrap_inline2252" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img150.gif"> .
+<p>
+      </p><p><a name="compatible">&nbsp;</a> <img width="500" height="45" align="BOTTOM" alt="equation949" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img151.gif"> </p><p>
+</p><p>
+      This is a problem with <i>K</i>-1 free variables and <i>K</i>(<i>K</i>-1)/2
+      equations, hence finding the exact solution for this problem
+      might not be possible. An iterative algorithm that minimises the
+      weighted Kullback-Leibler distance between  <img width="17" height="15" align="MIDDLE" alt="tex2html_wrap_inline2234" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img143.gif">  and
+       <img width="17" height="23" align="MIDDLE" alt="tex2html_wrap_inline2260" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img152.gif">  is used to estimate the closest solution. This
+      algorithm appears in [<a href="http://svr-www.eng.cam.ac.uk/~kkc21/thesis_main/node38.html#Bradley">Bradley and Terry, 1952</a>] and also described in
+      [<a href="http://svr-www.eng.cam.ac.uk/~kkc21/thesis_main/node38.html#Pairwise">Hastie and Tibshirani, 1996</a>]. It is defined as follows:
+</p><p>
+      </p><ol><li> Set  <img width="14" height="30" align="MIDDLE" alt="tex2html_wrap_inline2246" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img149.gif">  to some initial values. The averages of
+             <img width="17" height="15" align="MIDDLE" alt="tex2html_wrap_inline2234" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img143.gif">  can be used to initialise  <img width="14" height="30" align="MIDDLE" alt="tex2html_wrap_inline2246" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img149.gif"> .</li><li> Reestimate  <img width="14" height="30" align="MIDDLE" alt="tex2html_wrap_inline2246" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img149.gif">  using Eqn. <a href="http://svr-www.eng.cam.ac.uk/~kkc21/thesis_main/node25.html#estimate_p"><img align="BOTTOM" alt="gif" src="./Pairwise Coupling and Pairwise with Majority Voting_files/cross_ref_motif.gif"></a>
+            ( <img width="19" height="15" align="MIDDLE" alt="tex2html_wrap_inline2270" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img153.gif">  is the number of training data points belonging to
+            class <i>i</i> or <i>j</i>. It is included as a weight to account for
+            the different precisions in the pairwise probability
+            estimates. 
+            <a name="train_p">&nbsp;</a>
+      <p><a name="estimate_p">&nbsp;</a> <img width="500" height="46" align="BOTTOM" alt="equation968" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img154.gif"> </p><p></p></li><li> Renormalise  <img width="14" height="30" align="MIDDLE" alt="tex2html_wrap_inline2246" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img149.gif"> , i.e.  <img width="109" height="31" align="MIDDLE" alt="tex2html_wrap_inline2278" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img155.gif"> .</li><li> Recompute  <img width="17" height="23" align="MIDDLE" alt="tex2html_wrap_inline2260" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img152.gif">  and check for convergence (Eqn.
+            <a href="http://svr-www.eng.cam.ac.uk/~kkc21/thesis_main/node25.html#convergence"><img align="BOTTOM" alt="gif" src="./Pairwise Coupling and Pairwise with Majority Voting_files/cross_ref_motif.gif"></a>. Repeat from step <a href="http://svr-www.eng.cam.ac.uk/~kkc21/thesis_main/node25.html#train_p"><img align="BOTTOM" alt="gif" src="./Pairwise Coupling and Pairwise with Majority Voting_files/cross_ref_motif.gif"></a> if
+            convergence test fails).
+<p>
+      </p><p><a name="convergence">&nbsp;</a> <img width="500" height="38" align="BOTTOM" alt="equation986" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img156.gif"> </p><p></p></li></ol>
+<p>
+      The estimates obtained with this algorithm have the same order
+      as  <img width="17" height="28" align="MIDDLE" alt="tex2html_wrap_inline2244" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img147.gif"> . It also models the differences
+      between the  <img width="14" height="22" align="MIDDLE" alt="tex2html_wrap_inline2284" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img157.gif">  more accurately. The proof for these claims
+      can be found in [<a href="http://svr-www.eng.cam.ac.uk/~kkc21/thesis_main/node38.html#Pairwise">Hastie and Tibshirani, 1996</a>]. Similar to the previous method,
+      <i>x</i> will be labelled as the class with the highest estimated value
+      of  <img width="14" height="30" align="MIDDLE" alt="tex2html_wrap_inline2246" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img149.gif"> .
+</p><p>
+      </p><p> <img width="500" height="26" align="BOTTOM" alt="equation999" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img158.gif"> </p><p></p></li></ul>
+<p>
+The decision boundary given by  <img width="27" height="25" align="MIDDLE" alt="tex2html_wrap_inline2290" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img159.gif">  and  <img width="24" height="25" align="MIDDLE" alt="tex2html_wrap_inline2292" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img160.gif">  will be very
+similar since  <img width="14" height="30" align="MIDDLE" alt="tex2html_wrap_inline2246" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img149.gif">  and  <img width="17" height="28" align="MIDDLE" alt="tex2html_wrap_inline2244" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img147.gif">  have the same order
+and both decision rules only pick the class with largest estimate of
+ <img width="14" height="22" align="MIDDLE" alt="tex2html_wrap_inline2284" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img157.gif"> . Using the decision rule  <img width="33" height="24" align="MIDDLE" alt="tex2html_wrap_inline2300" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img161.gif">  will result in some area of
+indecision in the feature space of the testing data. This indecision
+region is the result of more than one class have the maximum vote from
+the pairwise probabilities. This is illustrated in Figure
+<a href="http://svr-www.eng.cam.ac.uk/~kkc21/thesis_main/node25.html#indecision"><img align="BOTTOM" alt="gif" src="./Pairwise Coupling and Pairwise with Majority Voting_files/cross_ref_motif.gif"></a>. The class label for any test data point in the
+indecision region will be arbitrary.
+</p><p>
+</p><p><a name="1208">&nbsp;</a><a name="indecision">&nbsp;</a> <img width="586" height="319" align="BOTTOM" alt="figure1011" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img162.gif"> <br>
+<strong>Figure:</strong> Comparing the decision boundary given by  <img width="33" height="24" align="MIDDLE" alt="tex2html_wrap_inline2300" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img161.gif">  ,
+      <img width="27" height="25" align="MIDDLE" alt="tex2html_wrap_inline2290" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img159.gif">  and  <img width="24" height="25" align="MIDDLE" alt="tex2html_wrap_inline2292" src="./Pairwise Coupling and Pairwise with Majority Voting_files/img160.gif"> <br>
+</p><p></p><hr><a name="tex2html449" href="http://svr-www.eng.cam.ac.uk/~kkc21/thesis_main/node26.html"><img width="37" height="24" align="BOTTOM" alt="next" src="./Pairwise Coupling and Pairwise with Majority Voting_files/next_motif.gif"></a> <a name="tex2html447" href="http://svr-www.eng.cam.ac.uk/~kkc21/thesis_main/node23.html"><img width="26" height="24" align="BOTTOM" alt="up" src="./Pairwise Coupling and Pairwise with Majority Voting_files/up_motif.gif"></a> <a name="tex2html441" href="http://svr-www.eng.cam.ac.uk/~kkc21/thesis_main/node24.html"><img width="63" height="24" align="BOTTOM" alt="previous" src="./Pairwise Coupling and Pairwise with Majority Voting_files/previous_motif.gif"></a> <a name="tex2html451" href="http://svr-www.eng.cam.ac.uk/~kkc21/thesis_main/node4.html"><img width="65" height="24" align="BOTTOM" alt="contents" src="./Pairwise Coupling and Pairwise with Majority Voting_files/contents_motif.gif"></a>  <br>
+<b> Next:</b> <a name="tex2html450" href="http://svr-www.eng.cam.ac.uk/~kkc21/thesis_main/node26.html">Extending SVM to solve </a>
+<b>Up:</b> <a name="tex2html448" href="http://svr-www.eng.cam.ac.uk/~kkc21/thesis_main/node23.html">Multi-Class Support Vector Machine</a>
+<b> Previous:</b> <a name="tex2html442" href="http://svr-www.eng.cam.ac.uk/~kkc21/thesis_main/node24.html">Combination of 1-to-rest classifiers</a>
+<p></p><address>
+<i>K.K. Chin <br>
+Thu Sep 10 11:05:30 BST 1998</i>
+</address>
+
+
+</body></html>

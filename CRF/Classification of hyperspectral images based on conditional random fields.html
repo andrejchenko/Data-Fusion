@@ -1,0 +1,2550 @@
+<!DOCTYPE html>
+<!-- saved from url=(0171)https://www.spiedigitallibrary.org/conference-proceedings-of-spie/9405/1/Classification-of-hyperspectral-images-based-on-conditional-random-fields/10.1117/12.2083374.short -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" src="./Classification of hyperspectral images based on conditional random fields_files/300lo.json"></script><script type="text/javascript" src="./Classification of hyperspectral images based on conditional random fields_files/_ate.track.config_resp"></script>
+    
+    <link rel="shortcut icon" href="https://www.spiedigitallibrary.org/favicon.ico" type="image/png">
+    <link rel="icon" href="https://www.spiedigitallibrary.org/favicon.ico" type="image/png">
+    <!-- WOMPMOBILE SITE TAG - DO NOT ALTER - PASTE IMMEDIATELY AFTER OPENING HEAD TAG - For more information see WompMobile.com -->
+    <script async="" src="./Classification of hyperspectral images based on conditional random fields_files/webtrends.min.js.download"></script><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;correlator=517471339999713&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy1&amp;impl=fifs&amp;json_a=1&amp;eid=108809107&amp;sc=1&amp;sfv=1-0-10&amp;iu_parts=11170898%2CCCRightRailtest%2C970x90%2CCCRightRail2&amp;enc_prev_ius=%2F0%2F1%2C%2F0%2F2%2C%2F0%2F3&amp;prev_iu_szs=300x250%2C970x90%2C300x250&amp;cookie_enabled=1&amp;abxe=1&amp;lmt=1506610960&amp;dt=1506610960474&amp;frm=20&amp;biw=1920&amp;bih=901&amp;oid=3&amp;adxs=-9%2C0%2C-9&amp;adys=-9%2C0%2C-9&amp;adks=2804885938%2C3325821613%2C224403642&amp;gut=v2&amp;ifi=1&amp;u_tz=120&amp;u_his=1&amp;u_h=1080&amp;u_w=1920&amp;u_ah=1040&amp;u_aw=1920&amp;u_cd=24&amp;u_nplug=5&amp;u_nmime=7&amp;u_sd=1&amp;flash=27.0.0&amp;url=https%3A%2F%2Fwww.spiedigitallibrary.org%2Fconference-proceedings-of-spie%2F9405%2F1%2FClassification-of-hyperspectral-images-based-on-conditional-random-fields%2F10.1117%2F12.2083374.short&amp;dssz=15&amp;icsg=12031&amp;std=0&amp;csl=106&amp;vrg=151&amp;vis=1&amp;ga_vid=1804568621.1506610818&amp;ga_sid=1506610960&amp;ga_hid=1628049658"></script><script async="" src="./Classification of hyperspectral images based on conditional random fields_files/analytics.js.download"></script><script>
+    (function(f,a,b,c,g){if(/nomobile/i.test(a.cookie)&&!/showmobile/i.test(b.hash)||/frommobile/i.test(b.hash))/frommobile/i.test(b.hash)&&(a.cookie="NoMobile=True; expires="+d.toUTCString()+";");else if(/ipod|phone|mobile|mini|silk/i.test(c)&&!/ipad|tablet/i.test(c)||/yesmobile/i.test(a.cookie)||/showmobile/i.test(b.hash))a.write('<plaintext style="display:none;">'),a.addEventListener("DOMContentLoaded",function(){f.stop&&f.stop();var c=a.getElementsByTagName("script")[0],e=a.createElement("script");
+        e.src="//az690879.vo.msecnd.net/7619/MobileScript.js";e.id="wompScript";e.onerror=function(){a.cookie="NoMobile=True; expires="+g+";";f.location=b.href};c.parentNode.insertBefore(e,c)})})(window,document,window.location,navigator.userAgent,(new Date(Date.now()+6E5)).toUTCString());</script>
+    <!-- END WOMPMOBILE TAG -->
+    <script async="async" src="./Classification of hyperspectral images based on conditional random fields_files/gpt.js.download"></script>
+    <script>
+          var googletag = googletag || {};
+          googletag.cmd = googletag.cmd || [];
+    </script>
+
+    <script>
+          googletag.cmd.push(function() {
+            googletag.defineSlot('/11170898/CCRightRailtest', [300, 250], 'div-gpt-ad-1483661906416-0').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+          });
+          googletag.cmd.push(function () {
+              googletag.defineSlot('/11170898/970x90', [970, 90], 'div-gpt-ad-1483663848442-0').addService(googletag.pubads());
+              googletag.pubads().enableSingleRequest();
+              googletag.enableServices();
+          });
+          googletag.cmd.push(function () {
+              googletag.defineSlot('/11170898/CCRightRail2', [300, 250], 'div-gpt-ad-1491947084194-0').addService(googletag.pubads());
+              googletag.pubads().enableSingleRequest();
+              googletag.enableServices();
+          });
+
+    </script>
+
+
+
+    
+        <title>Classification of hyperspectral images based on conditional random fields</title>
+        <meta name="description" content="SPIE Digital Library Proceedings">
+        <meta name="keywords" content="">
+  
+    <meta name="WT.ti" content="DL:_Conference_Proceedings:_Article">
+    <meta name="WT.cg_n" content="MainDrillDown:Digital_Library;ProductTypeDrillDown:Digital_Library;;;">
+    <meta name="WT.cg_s" content="Main:Read_Content;Product:Conference_Proceedings;;;">
+    <meta name="DCSext.auth" content="">
+    <meta name="DCSext.mobilesite" content="">
+
+  
+
+
+    <meta name="citation_title" content="Classification of hyperspectral images based on conditional random fields">
+	<meta name="citation_inbook_title" content="Image Processing: Machine Vision Applications VIII">
+	<meta name="citation_volume" content="9405">
+	<meta name="citation_publication_date" content="2015/02/27">
+	<meta name="citation_doi" content="10.1117/12.2083374">
+	<meta name="citation_publisher" content="International Society for Optics and Photonics">
+	<meta name="citation_firstpage" content="940510">
+	<meta name="citation_author" content="Yang Hu">
+	<meta name="citation_author_institution" content="Rochester Institute of Technology (United States)">
+	<meta name="citation_author" content="Eli Saber">
+	<meta name="citation_author_institution" content="Rochester Institute of Technology (United States)">
+	<meta name="citation_author" content="Sildomar Monteiro">
+	<meta name="citation_author_institution" content="Rochester Institute of Technology (United States)">
+	<meta name="citation_author" content="Nathan D. Cahill">
+	<meta name="citation_author_institution" content="Rochester Institute of Technology (United States)">
+	<meta name="citation_author" content="David W. Messinger">
+	<meta name="citation_author_institution" content="Rochester Institute of Technology (United States)">
+	<meta name="citation_conference_title" content="Image Processing: Machine Vision Applications VIII">
+	<meta name="citation_fulltext_html_url" content="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/9405/940510/Classification-of-hyperspectral-images-based-on-conditional-random-fields/10.1117/12.2083374.full">
+	<meta name="citation_abstract_html_url" content="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/9405/940510/Classification-of-hyperspectral-images-based-on-conditional-random-fields/10.1117/12.2083374.short">
+	<meta name="citation_pdf_url" content="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/9405/940510/Classification-of-hyperspectral-images-based-on-conditional-random-fields/10.1117/12.2083374.pdf">
+<meta name="citation_abstract" content="A significant increase in the availability of high resolution hyperspectral images has led to the need for developing pertinent techniques in image analysis, such as classification. Hyperspectral images that are correlated spatially and spectrally provide ample information across the bands to benefit this purpose. Conditional Random Fields (CRFs) are discriminative models that carry several advantages over conventional techniques: no requirement of the independence assumption for observations, flexibility in defining local and pairwise potentials, and an independence between the modules of feature selection and parameter leaning. In this paper we present a framework for classifying remotely sensed imagery based on CRFs. We apply a Support Vector Machine (SVM) classifier to raw remotely sensed imagery data in order to generate more meaningful feature potentials to the CRFs model. This approach produces promising results when tested with publicly available AVIRIS Indian Pine imagery.">	<meta name="citation_keywords" content="image classification; hyperspectral image; support vector machine; conditional random fields; ">
+
+            <!--<base href="https://www.spiedigitallibrary.org/">--><base href=".">
+                <link rel="shortcut icon" href="https://www.spiedigitallibrary.org/assets/images/global/favicon.png">
+
+
+    <link href="./Classification of hyperspectral images based on conditional random fields_files/dlcss" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./Classification of hyperspectral images based on conditional random fields_files/fonts.css">
+    
+    
+    
+
+
+
+    <script src="./Classification of hyperspectral images based on conditional random fields_files/jquery"></script><script src="https://securepubads.g.doubleclick.net/gpt/pubads_impl_151.js" async=""></script><link rel="prefetch" href="https://tpc.googlesyndication.com/safeframe/1-0-10/html/container.html"><link rel="prefetch" href="https://securepubads.g.doubleclick.net/static/3p_cookie.html">
+
+    <script src="./Classification of hyperspectral images based on conditional random fields_files/bootstrap"></script>
+
+
+    <script src="./Classification of hyperspectral images based on conditional random fields_files/js"></script>
+
+    
+    
+    
+    <script src="./Classification of hyperspectral images based on conditional random fields_files/InternalLinksFix.js.download"></script>
+
+
+    <script type="text/javascript" async="" src="./Classification of hyperspectral images based on conditional random fields_files/MathJax.js.download">
+    </script>
+    <script>
+
+        //make article nav sticky
+        $(document).ready(function () {
+
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > $("#divFilterMenu").offset().top - 85) {
+                    if ($("#fixed #navbarWrapper").length == 0) {
+                        $("#fixed").append("<div id='navbarWrapper'></div>");
+                    }
+                    $("#navbarWrapper").append($("#navbar"));
+                    $('.ToggleNavbarButton').removeClass('hide');
+                }
+                else {
+                    $("#divFilterMenu").prepend($("#navbar"));
+                    $('.ToggleNavbarButton').addClass('hide');
+                }
+
+            });
+        });
+    </script>
+
+
+
+    <script>
+        //script for Advanced Search
+        $(document).ready(function () {
+            $("#advSearchYearSlider").slider({
+                range: true,
+                min: 1962,
+                max: 2017,
+                values: [1962, 2017],
+                step: 1,
+                slide: function (event, ui) {
+                    $("#advSearchYearSliderStart").val(ui.values[0]);
+                    $("#advSearchYearSliderEnd").val(ui.values[1]);
+                },
+                stop: function (event, ui) {
+                    ChangeAdvSearchYearSlider(ui.values[0], ui.values[1]);
+                }
+            });
+
+            $(".yearSlider span:nth-child(2), .yearSlider span:nth-child(3)").css({"text-align": "center", "line-height": "15px", "background-color" : "#fff100", "color" : "black"});
+            $(".yearSlider span:nth-child(2)").html("<");
+            $(".yearSlider span:nth-child(3)").html(">");
+
+            $(".advSearchPubType").change(
+                function (event) {
+                    var checkbox = event.target;
+
+                    if(checkbox.checked)
+                    {
+                        $("#advSearchSubTypeContainer" + checkbox.value).show();
+                    }
+                    else
+                    {
+                        $("#advSearchSubTypeContainer" + checkbox.value).hide();
+                    }
+
+                    var label = $("label[for='advSearch" + checkbox.value + "']");
+
+                    if(checkbox.checked){
+                        label.html(label.html().replace("+", "-"));
+                    }
+                    else{
+
+                        label.html(label.html().replace("-", "+"));
+
+                        //if checkbox is not checked, clear both sub checkboxes and textboxes
+                        $("#advSearchSubTypeContainer" + checkbox.value + " input[type=checkbox]").prop("checked", false);
+                        $("#advSearchContainer" + checkbox.value + " input[type=text]").val("");
+                    }
+                }
+            )
+        })
+    </script>
+    
+
+   
+
+
+    
+    <!--Javascript for google web analytics-->
+    <script>
+          (function (i, s, o, g, r, a, m) {
+          i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+              (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date(); a = s.createElement(o),
+              m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+          })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+          ga('create', 'UA-97623992-2', 'auto');
+          ga('send', 'pageview');
+
+    </script>
+
+    
+
+    
+<style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.at-icon{fill:#fff;border:0}.at-icon-wrapper{display:inline-block;overflow:hidden}a .at-icon-wrapper{cursor:pointer}.at-rounded,.at-rounded-element .at-icon-wrapper{border-radius:12%}.at-circular,.at-circular-element .at-icon-wrapper{border-radius:50%}.addthis_32x32_style .at-icon{width:2pc;height:2pc}.addthis_24x24_style .at-icon{width:24px;height:24px}.addthis_20x20_style .at-icon{width:20px;height:20px}.addthis_16x16_style .at-icon{width:1pc;height:1pc}#at16lb{display:none;position:absolute;top:0;left:0;width:100%;height:100%;z-index:1001;background-color:#000;opacity:.001}#at_complete,#at_error,#at_share,#at_success{position:static!important}.at15dn{display:none}#at15s,#at16p,#at16p form input,#at16p label,#at16p textarea,#at_share .at_item{font-family:arial,helvetica,tahoma,verdana,sans-serif!important;font-size:9pt!important;outline-style:none;outline-width:0;line-height:1em}* html #at15s.mmborder{position:absolute!important}#at15s.mmborder{position:fixed!important;width:250px!important}#at15s{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABtJREFUeNpiZGBgaGAgAjAxEAlGFVJHIUCAAQDcngCUgqGMqwAAAABJRU5ErkJggg==);float:none;line-height:1em;margin:0;overflow:visible;padding:5px;text-align:left;position:absolute}#at15s a,#at15s span{outline:0;direction:ltr;text-transform:none}#at15s .at-label{margin-left:5px}#at15s .at-icon-wrapper{width:1pc;height:1pc;vertical-align:middle}#at15s .at-icon{width:1pc;height:1pc}.at4-icon{display:inline-block;background-repeat:no-repeat;background-position:top left;margin:0;overflow:hidden;cursor:pointer}.addthis_16x16_style .at4-icon,.addthis_default_style .at4-icon,.at4-icon,.at-16x16{width:1pc;height:1pc;line-height:1pc;background-size:1pc!important}.addthis_32x32_style .at4-icon,.at-32x32{width:2pc;height:2pc;line-height:2pc;background-size:2pc!important}.addthis_24x24_style .at4-icon,.at-24x24{width:24px;height:24px;line-height:24px;background-size:24px!important}.addthis_20x20_style .at4-icon,.at-20x20{width:20px;height:20px;line-height:20px;background-size:20px!important}.at4-icon.circular,.circular .at4-icon,.circular.aticon{border-radius:50%}.at4-icon.rounded,.rounded .at4-icon{border-radius:4px}.at4-icon-left{float:left}#at15s .at4-icon{text-indent:20px;padding:0;overflow:visible;white-space:nowrap;background-size:1pc;width:1pc;height:1pc;background-position:top left;display:inline-block;line-height:1pc}.addthis_vertical_style .at4-icon,.at4-follow-container .at4-icon{margin-right:5px}html>body #at15s{width:250px!important}#at15s.atm{background:none!important;padding:0!important;width:10pc!important}#at15s_inner{background:#fff;border:1px solid #fff;margin:0}#at15s_head{position:relative;background:#f2f2f2;padding:4px;cursor:default;border-bottom:1px solid #e5e5e5}.at15s_head_success{background:#cafd99!important;border-bottom:1px solid #a9d582!important}.at15s_head_success a,.at15s_head_success span{color:#000!important;text-decoration:none}#at15s_brand,#at15sptx,#at16_brand{position:absolute}#at15s_brand{top:4px;right:4px}.at15s_brandx{right:20px!important}a#at15sptx{top:4px;right:4px;text-decoration:none;color:#4c4c4c;font-weight:700}#at15sptx:hover{text-decoration:underline}#at16_brand{top:5px;right:30px;cursor:default}#at_hover{padding:4px}#at_hover .at_item,#at_share .at_item{background:#fff!important;float:left!important;color:#4c4c4c!important}#at_share .at_item .at-icon-wrapper{margin-right:5px}#at_hover .at_bold{font-weight:700;color:#000!important}#at_hover .at_item{width:7pc!important;padding:2px 3px!important;margin:1px;text-decoration:none!important}#at_hover .at_item.athov,#at_hover .at_item:focus,#at_hover .at_item:hover{margin:0!important}#at_hover .at_item.athov,#at_hover .at_item:focus,#at_hover .at_item:hover,#at_share .at_item.athov,#at_share .at_item:hover{background:#f2f2f2!important;border:1px solid #e5e5e5;color:#000!important;text-decoration:none}.ipad #at_hover .at_item:focus{background:#fff!important;border:1px solid #fff}.at15t{display:block!important;height:1pc!important;line-height:1pc!important;padding-left:20px!important;background-position:0 0;text-align:left}.addthis_button,.at15t{cursor:pointer}.addthis_toolbox a.at300b,.addthis_toolbox a.at300m{width:auto}.addthis_toolbox a{margin-bottom:5px;line-height:initial}.addthis_toolbox.addthis_vertical_style{width:200px}.addthis_button_facebook_like .fb_iframe_widget{line-height:100%}.addthis_button_facebook_like iframe.fb_iframe_widget_lift{max-width:none}.addthis_toolbox a.addthis_button_counter,.addthis_toolbox a.addthis_button_facebook_like,.addthis_toolbox a.addthis_button_facebook_send,.addthis_toolbox a.addthis_button_facebook_share,.addthis_toolbox a.addthis_button_foursquare,.addthis_toolbox a.addthis_button_google_plusone,.addthis_toolbox a.addthis_button_linkedin_counter,.addthis_toolbox a.addthis_button_pinterest_pinit,.addthis_toolbox a.addthis_button_stumbleupon_badge,.addthis_toolbox a.addthis_button_tweet{display:inline-block}.at-share-tbx-element .google_plusone_iframe_widget>span>div{vertical-align:top!important}.addthis_toolbox span.addthis_follow_label{display:none}.addthis_toolbox.addthis_vertical_style span.addthis_follow_label{display:block;white-space:nowrap}.addthis_toolbox.addthis_vertical_style a{display:block}.addthis_toolbox.addthis_vertical_style.addthis_32x32_style a{line-height:2pc;height:2pc}.addthis_toolbox.addthis_vertical_style .at300bs{margin-right:4px;float:left}.addthis_toolbox.addthis_20x20_style span{line-height:20px}.addthis_toolbox.addthis_32x32_style span{line-height:2pc}.addthis_toolbox.addthis_pill_combo_style .addthis_button_compact .at15t_compact,.addthis_toolbox.addthis_pill_combo_style a{float:left}.addthis_toolbox.addthis_pill_combo_style a.addthis_button_tweet{margin-top:-2px}.addthis_toolbox.addthis_pill_combo_style .addthis_button_compact .at15t_compact{margin-right:4px}.addthis_default_style .addthis_separator{margin:0 5px;display:inline}div.atclear{clear:both}.addthis_default_style .addthis_separator,.addthis_default_style .at4-icon,.addthis_default_style .at300b,.addthis_default_style .at300bo,.addthis_default_style .at300bs,.addthis_default_style .at300m{float:left}.at300b img,.at300bo img{border:0}a.at300b .at4-icon,a.at300m .at4-icon{display:block}.addthis_default_style .at300b,.addthis_default_style .at300bo,.addthis_default_style .at300m{padding:0 2px}.at300b,.at300bo,.at300bs,.at300m{cursor:pointer}.addthis_button_facebook_like.at300b:hover,.addthis_button_facebook_like.at300bs:hover,.addthis_button_facebook_send.at300b:hover,.addthis_button_facebook_send.at300bs:hover{opacity:1}.addthis_20x20_style .at15t,.addthis_20x20_style .at300bs{overflow:hidden;display:block;height:20px!important;width:20px!important;line-height:20px!important}.addthis_32x32_style .at15t,.addthis_32x32_style .at300bs{overflow:hidden;display:block;height:2pc!important;width:2pc!important;line-height:2pc!important}.at300bs{overflow:hidden;display:block;background-position:0 0;height:1pc;width:1pc;line-height:1pc!important}.addthis_default_style .at15t_compact,.addthis_default_style .at15t_expanded{margin-right:4px}#at_share .at_item{width:123px!important;padding:4px;margin-right:2px;border:1px solid #fff}#at16p{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABtJREFUeNpiZGBgaGAgAjAxEAlGFVJHIUCAAQDcngCUgqGMqwAAAABJRU5ErkJggg==);z-index:10000001;position:absolute;top:50%;left:50%;width:300px;padding:10px;margin:0 auto;margin-top:-185px;margin-left:-155px;font-family:arial,helvetica,tahoma,verdana,sans-serif;font-size:9pt;color:#5e5e5e}#at_share{margin:0;padding:0}#at16pt{position:relative;background:#f2f2f2;height:13px;padding:5px 10px}#at16pt a,#at16pt h4{font-weight:700}#at16pt h4{display:inline;margin:0;padding:0;font-size:9pt;color:#4c4c4c;cursor:default}#at16pt a{position:absolute;top:5px;right:10px;color:#4c4c4c;text-decoration:none;padding:2px}#at15sptx:focus,#at16pt a:focus{outline:thin dotted}#at15s #at16pf a{top:1px}#_atssh{width:1px!important;height:1px!important;border:0!important}.atm{width:10pc!important;padding:0;margin:0;line-height:9pt;letter-spacing:normal;font-family:arial,helvetica,tahoma,verdana,sans-serif;font-size:9pt;color:#444;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABtJREFUeNpiZGBgaGAgAjAxEAlGFVJHIUCAAQDcngCUgqGMqwAAAABJRU5ErkJggg==);padding:4px}.atm-f{text-align:right;border-top:1px solid #ddd;padding:5px 8px}.atm-i{background:#fff;border:1px solid #d5d6d6;padding:0;margin:0;box-shadow:1px 1px 5px rgba(0,0,0,.15)}.atm-s{margin:0!important;padding:0!important}.atm-s a:focus{border:transparent;outline:0;transition:none}#at_hover.atm-s a,.atm-s a{display:block;text-decoration:none;padding:4px 10px;color:#235dab!important;font-weight:400;font-style:normal;transition:none}#at_hover.atm-s .at_bold{color:#235dab!important}#at_hover.atm-s a:hover,.atm-s a:hover{background:#2095f0;text-decoration:none;color:#fff!important}#at_hover.atm-s .at_bold{font-weight:700}#at_hover.atm-s a:hover .at_bold{color:#fff!important}.atm-s a .at-label{vertical-align:middle;margin-left:5px;direction:ltr}.at_PinItButton{display:block;width:40px;height:20px;padding:0;margin:0;background-image:url(//s7.addthis.com/static/t00/pinit00.png);background-repeat:no-repeat}.at_PinItButton:hover{background-position:0 -20px}.addthis_toolbox .addthis_button_pinterest_pinit{position:relative}.at-share-tbx-element .fb_iframe_widget span{vertical-align:baseline!important}#at16pf{height:auto;text-align:right;padding:4px 8px}.at-privacy-info{position:absolute;left:7px;bottom:7px;cursor:pointer;text-decoration:none;font-family:helvetica,arial,sans-serif;font-size:10px;line-height:9pt;letter-spacing:.2px;color:#666}.at-privacy-info:hover{color:#000}.body .wsb-social-share .wsb-social-share-button-vert{padding-top:0;padding-bottom:0}.body .wsb-social-share.addthis_counter_style .addthis_button_tweet.wsb-social-share-button{padding-top:40px}.body .wsb-social-share.addthis_counter_style .addthis_button_google_plusone.wsb-social-share-button{padding-top:0}.body .wsb-social-share.addthis_counter_style .addthis_button_facebook_like.wsb-social-share-button{padding-top:21px}@media print{#at4-follow,#at4-share,#at4-thankyou,#at4-whatsnext,#at4m-mobile,#at15s,.at4,.at4-recommended{display:none!important}}@media screen and (max-width:400px){.at4win{width:100%}}@media screen and (max-height:700px) and (max-width:400px){.at4-thankyou-inner .at4-recommended-container{height:122px;overflow:hidden}.at4-thankyou-inner .at4-recommended .at4-recommended-item:first-child{border-bottom:1px solid #c5c5c5}}</style><style type="text/css">.at-branding-logo{font-family:helvetica,arial,sans-serif;text-decoration:none;font-size:10px;display:inline-block;margin:2px 0;letter-spacing:.2px}.at-branding-logo .at-branding-icon{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAMAAAC67D+PAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAZQTFRF////+GlNUkcc1QAAAB1JREFUeNpiYIQDBjQmAwMmkwEM0JnY1WIxFyDAABGeAFEudiZsAAAAAElFTkSuQmCC")}.at-branding-logo .at-branding-icon,.at-branding-logo .at-privacy-icon{display:inline-block;height:10px;width:10px;margin-left:4px;margin-right:3px;margin-bottom:-1px;background-repeat:no-repeat}.at-branding-logo .at-privacy-icon{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAKCAMAAABR24SMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABhQTFRF8fr9ot/xXcfn2/P5AKva////////AKTWodjhjAAAAAd0Uk5T////////ABpLA0YAAAA6SURBVHjaJMzBDQAwCAJAQaj7b9xifV0kUKJ9ciWxlzWEWI5gMF65KUTv0VKkjVeTerqE/x7+9BVgAEXbAWI8QDcfAAAAAElFTkSuQmCC")}.at-branding-logo span{text-decoration:none}.at-branding-logo .at-branding-addthis,.at-branding-logo .at-branding-powered-by{color:#666}.at-branding-logo .at-branding-addthis:hover{color:#333}.at-cv-with-image .at-branding-addthis,.at-cv-with-image .at-branding-addthis:hover{color:#fff}a.at-branding-logo:visited{color:initial}.at-branding-info{display:inline-block;padding:0 5px;color:#666;border:1px solid #666;border-radius:50%;font-size:10px;line-height:9pt;opacity:.7;transition:all .3s ease;text-decoration:none}.at-branding-info span{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.at-branding-info:before{content:'i';font-family:Times New Roman}.at-branding-info:hover{color:#0780df;border-color:#0780df}</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+</style></head>
+<body><div id="MathJax_Message" style="display: none;"></div>
+    
+
+
+
+    <div id="page">
+<input type="hidden" id="dlURL" value="https://www.spiedigitallibrary.org">
+<div style="align-content:center;background-color: rgb(47, 47, 47);padding-top: 10px;padding-bottom:10px;" class="hidden-print">
+    <div id="div-gpt-ad-1483663848442-0" style="height:auto; width:970px;margin:auto;">
+        <!-- <text style="font-family: 'Arial –Regular';font-size: 12px;Color: #ffffff;">Advertisement</text> -->
+        <script>
+            googletag.cmd.push(function() { googletag.display('div-gpt-ad-1483663848442-0'); });
+        </script><div id="google_ads_iframe_/11170898/970x90_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/11170898/970x90_0" title="3rd party ad content" name="google_ads_iframe_/11170898/970x90_0" width="970" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" src="./Classification of hyperspectral images based on conditional random fields_files/saved_resource.html"></iframe></div>
+    </div>
+
+</div>
+    <nav id="top">
+        <div class="container hidden-print">
+            
+            <a href="http://spie.org/" target="" class="logo">
+                    <img src="./Classification of hyperspectral images based on conditional random fields_files/SPIE_Logo_Header.png" alt="">
+
+            </a>
+            <a href="https://www.spiedigitallibrary.org/" target="" class="logo on">
+                    <img src="./Classification of hyperspectral images based on conditional random fields_files/SPIE_DL_Logo_Header.png" alt="">
+
+            </a>
+            <a href="https://spiecareercenter.org/" target="" class="logo">
+                    <img src="./Classification of hyperspectral images based on conditional random fields_files/CC_logo_header.png" alt="">
+
+            </a>
+            <div class="account">
+                
+                            <a id="account-detail" style="cursor:pointer;" onclick="return ShowLoginDialog();">
+                                <text>Sign In</text>
+                            </a>
+                    <span class="pipe"></span>
+                <a href="http://spie.org/shoppingcart?dl=true">View Cart</a>
+                
+                    <span class="pipe"></span>
+    <a href="https://www.spiedigitallibrary.org/help" title="Help">
+        Help</a>
+            </div>
+        </div>
+    </nav>
+    <div class="col-xs-6 ProfileSigninRow divPopup" id="divPopupLogin" style="display:none;height:375px;">
+
+<script type="text/javascript">
+
+    function ShowHidePwdSignIn()
+    {
+        var $pwd = $(".pwdSignIn");
+        if ($pwd.attr('type') == 'password')
+        {
+            $pwd.attr('type', 'text')
+        }
+        else
+            $pwd.attr('type', 'password')
+    }
+
+</script>
+<style>
+
+.formgroupStyle
+{
+    width:290px;
+}
+
+.panelSignIn
+{
+    width:360px;
+    right:-10px;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+</style>
+
+
+<div class="modal-body">
+    <div class="row panelSignIn">
+        <div id="LoginComment">
+            
+        </div>
+<form action="https://www.spiedigitallibrary.org/accountAjax/SignIn" id="SignInForm" method="post"><input length="171" id="Redirect" name="Redirect" type="hidden" value="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/9405/1/Classification-of-hyperspectral-images-based-on-conditional-random-fields/10.1117/12.2083374.short"><input name="__RequestVerificationToken" type="hidden" value="k4x1TbT0RAH26RWTCs7UhZHLt4LUvhVb2Fxwqi0qWSiWWljmWMsydku9AvREp9ferYpK0NcUoayqdSL2uxDfOsgZujU1">            <div id="SignInErrors" class="form-group formgroupStyle validation-summary-errors">&nbsp;</div>
+            <div class="form-group formgroupStyle">
+                <label class="control-label pull-left" for="EmailorUsername">Email or Username</label>
+                <a class="control-label pull-right" href="https://spie.org/account/forgotusername?redir=https%3a%2f%2fwww.spiedigitallibrary.org%2fconference-proceedings-of-spie%2f9405%2f1%2fClassification-of-hyperspectral-images-based-on-conditional-random-fields%2f10.1117%2f12.2083374.short" style="Font-Family:Arial;Font-Size:12px;Color:#6d6e70;text-decoration:underline;">Forgot your username?</a>
+                <input class="form-control" data-val="true" data-val-required="Email or Username Required" id="EmailorUsername" name="EmailorUsername" style="width:290px;height:36px;Color:#404041;" type="text" value="">
+                <span class="field-validation-valid" data-valmsg-for="EmailorUsername" data-valmsg-replace="true"></span>
+            </div>
+            <div class="form-group formgroupStyle">
+                <label class="control-label pull-left" for="Password">Password</label>
+
+                <a class="control-label pull-right" href="https://spie.org/account/forgotpassword?redir=https%3a%2f%2fwww.spiedigitallibrary.org%2fconference-proceedings-of-spie%2f9405%2f1%2fClassification-of-hyperspectral-images-based-on-conditional-random-fields%2f10.1117%2f12.2083374.short" style="Font-Family:Arial;Font-Size:12px;Color:#6d6e70;text-decoration:underline;">Forgot your password?</a>
+
+                <div class="input-group input-sm" style="left:-10px;width:300px;">
+                    <input class="form-control input-sm pwdSignIn" data-val="true" data-val-required="Password Required" id="headerPassword" name="Password" style="height:36px;Color:#404041;" type="password">
+                    <span class="input-group-addon" style="width:80px;height:36px;"><input type="checkbox" id="checkbox" onclick="ShowHidePwdSignIn();"> <label for="checkbox"><span class="displayCheckbox"></span> Show</label></span>
+                </div>
+                <span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="RememberEmailOrUserName"><label for="RememberEmailOrUserName" style="font-size:11px;Color: #404041;"><span class="displayCheckbox"></span>Remember Email/Username on this computer</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="RememberPassword"><label for="RememberPassword" style="font-size:11px;Color: #404041;"><span class="displayCheckbox"></span>Remember Password</label>
+            </div>
+            <div class="form-group">
+                <input type="submit" name="SIGN IN &gt;" value="SignIn &gt;" style="width:152px;height:65px;Color:#404041;" class="center-block" onclick="postSignInForm(event);">
+            </div>
+            <div class="form-group text-center">
+                No SPIE account? <a href="https://spie.org/account/create/accountinfo" class="defaultUnderline">Create an account </a><br>
+                or <a href="https://www.spiedigitallibrary.org/Account/shibbolethsignin?redirect=https%3a%2f%2fwww.spiedigitallibrary.org%2fconference-proceedings-of-spie%2f9405%2f1%2fClassification-of-hyperspectral-images-based-on-conditional-random-fields%2f10.1117%2f12.2083374.short" class="defaultUnderline">Instititional Sign In via Shibboleth</a>
+            </div>
+<input id="loginPaperToSave" name="PaperToSave" type="hidden" value=""><input id="loginPaperToSaveType" name="PaperToSaveType" type="hidden" value=""></form>    </div>
+</div>
+
+<script>
+    function postSignInForm(event)
+    {
+        event.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: '/Account/SignIn',
+            data: $('#SignInForm').serialize(),
+            dataType: 'json',
+            async: false,
+            success: function (result)
+            {
+                if (result.Success)
+                {
+                    if (result.returnURL != "") {
+                        location = result.returnURL + "&returnUrl=" + encodeURIComponent(location.href);
+                    }
+                    else {
+                        location.reload();
+                    }
+                }
+                else
+                {
+                    $('#SignInErrors').text(result.Message);
+                }
+            },
+            error: function (result)
+            {
+                $('#SignInErrors').text("Sign in failure. Please try again.");
+            }
+        });
+        return false;
+    }
+</script>
+
+    </div>
+    <script language="javascript" type="text/javascript">
+
+        function ShowLoginDialog() {
+        $('.ui-dialog-content').dialog('close');
+        $("#divPopupLogin").dialog(
+                        {
+                            width: 360,
+                            height: 525,
+                            modal: true,
+                            resizable: false,
+                            draggable: false,
+                            closeOnEscape: true,
+                            zIndex: 999,
+                            title: 'LOGIN:',
+                            close: function () { $("#LoginComment").text('') }
+                        }
+        );
+
+        return false;
+        }
+
+    </script>
+
+    <header class="hidden-print">
+        <div class="container">
+            <div class="logoContainer">
+                <a href="https://www.spiedigitallibrary.org/">
+                        <img src="./Classification of hyperspectral images based on conditional random fields_files/SPIE_DL_Logo_Nav.png" alt="" class="logo">
+
+                </a>
+            </div>
+
+        <div style="display:inline-block;">
+                <div class="navigationGroupName GothamNarrowMedium">
+                    CONFERENCE PROCEEDINGS
+                </div>
+            <ul class="hidden-print" style="margin:0px;">
+    <li class="on">
+    <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie" title="Conference Proceedings of SPIE">
+        Papers</a>
+
+    </li>
+    <li>
+    <a href="https://www.spiedigitallibrary.org/conference-presentations" title="Videos">
+        Presentations</a>
+
+    </li>
+            </ul>
+        </div>
+        <div style="display:inline-block;">
+            <ul class="hidden-print" style="margin:0px;">
+    <li>
+    <a href="https://www.spiedigitallibrary.org/journals" title="Journals">
+        Journals<span class="blackdownarrow"></span></a>
+                <ul>
+    <li>
+
+    </li>
+    <li>
+    <a href="https://www.spiedigitallibrary.org/journals/journal-of-applied-remote-sensing" title="Journal of Applied Remote Sensing">
+        Journal of Applied Remote Sensing</a>
+
+    </li>
+    <li>
+    <a href="https://www.spiedigitallibrary.org/journals/journal-of-astronomical-telescopes-instruments-and-systems" title="Journal of Astronomical Telescopes, Instruments, and Systems">
+        Journal of Astronomical Telescopes, Instruments, and Systems</a>
+
+    </li>
+    <li>
+    <a href="https://www.spiedigitallibrary.org/journals/journal-of-biomedical-optics" title="Journal of Biomedical Optics">
+        Journal of Biomedical Optics</a>
+
+    </li>
+    <li>
+    <a href="https://www.spiedigitallibrary.org/journals/journal-of-electronic-imaging" title="Journal of Electronic Imaging">
+        Journal of Electronic Imaging</a>
+
+    </li>
+    <li>
+    <a href="https://www.spiedigitallibrary.org/journals/journal-of-medical-imaging" title="Journal of Medical Imaging">
+        Journal of Medical Imaging</a>
+
+    </li>
+    <li>
+    <a href="https://www.spiedigitallibrary.org/journals/journal-of-micro-nanolithography-mems-and-moems" title="Journal of Micro-Nanolithography, MEMS, and MOEMS">
+        Journal of Micro-Nanolithography, MEMS, and MOEMS</a>
+
+    </li>
+    <li>
+    <a href="https://www.spiedigitallibrary.org/journals/journal-of-nanophotonics" title="Journal of Nanophotonics">
+        Journal of Nanophotonics</a>
+
+    </li>
+    <li>
+    <a href="https://www.spiedigitallibrary.org/journals/journal-of-photonics-for-energy" title="Journal of Photonics for Energy">
+        Journal of Photonics for Energy</a>
+
+    </li>
+    <li>
+    <a href="https://www.spiedigitallibrary.org/journals/neurophotonics" title="Neurophotonics">
+        Neurophotonics</a>
+
+    </li>
+    <li>
+    <a href="https://www.spiedigitallibrary.org/journals/optical-engineering" title="Optical Engineering">
+        Optical Engineering</a>
+
+    </li>
+                </ul>
+
+    </li>
+    <li>
+    <a href="https://www.spiedigitallibrary.org/ebooks" title="eBooks">
+        Ebooks</a>
+
+    </li>
+            </ul>
+        </div>
+
+
+            
+            <form action="https://www.spiedigitallibrary.org/search" class="search" onsubmit="return FilterSearchTerm(&#39;headerSearchTerm&#39;)">
+                <a class="advanced" onclick="ShowAdvancedSearchModal()" style="cursor:pointer;"><span class="defaultUnderline">Advanced Search</span> &gt;</a>
+                <div class="icon-wrap" style="height:40px">
+                    <input type="text" name="term" id="headerSearchTerm" class="searchTermTextbox ui-autocomplete-input" placeholder="Search" autocomplete="off">
+                    <input type="text" name="term" id="headerSearchTermGray" class="searchTermTextboxGray" disabled="" autocomplete="off">
+                </div>
+                <input type="submit" value="">
+            </form>
+            <div class="crumbs">
+                        <a href="https://www.spiedigitallibrary.org/" title="Home">
+                            Home
+                        </a>
+                        <span class="pipe">&gt;</span>
+                        <a href="https://www.spiedigitallibrary.org/proceedings" title="Proceedings">
+                            Proceedings
+                        </a>
+                        <span class="pipe">&gt;</span>
+                        <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/9405.toc" title="Volume 9405">
+                            Volume 9405
+                        </a>
+                        <span class="pipe">&gt;</span>
+                        <span class="on">Article</span>
+            </div>
+        </div>
+    </header>
+        <div id="body" class="clearfix">
+            
+
+
+
+<main>
+    <div class="container body-content">
+
+            
+
+
+
+<style type="text/css">
+    .modal-body {
+        padding-left: 0px !important;
+    }
+</style>
+
+<div class="panel panel-default SPIEPanel">
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-xs-8" style="padding-left:0px !important;height:auto;">
+                <div>
+
+<div class="panel panel-default ProceedingsArticleOpenAccessPanel ProceedingsArticleOpenAccessPanelNoBorder">
+    <div class="panel-body" style="padding:0px !important;">
+        <div class="row ProceedingsArticleOpenAccessHeaderRow ProceedingsArticleOpenAccessHeaderRowWidth">
+            <text class="DetailDate">27 February 2015</text>
+            <text class="ProceedingsArticleOpenAccessHeaderText">Classification of hyperspectral images based on conditional random fields</text>
+        </div>
+            <div class="row  ProceedingsArticleOpenAccessRow">
+                <text class="ProceedingsArticleOpenAccessText">
+                                <a href="https://www.spiedigitallibrary.org/profile/Yang.Hu-148317" style="text-decoration:underline;">Yang  Hu</a>;
+                                <a href="https://www.spiedigitallibrary.org/profile/notfound?author=Eli_Saber" style="text-decoration:underline;">Eli  Saber</a>;
+                                <a href="https://www.spiedigitallibrary.org/profile/notfound?author=Sildomar_Monteiro" style="text-decoration:underline;">Sildomar  Monteiro</a>;
+                                <a href="https://www.spiedigitallibrary.org/profile/Nathan.Cahill-45237" style="text-decoration:underline;">Nathan D. Cahill</a>;
+                                <a href="https://www.spiedigitallibrary.org/profile/David.Messinger-45735" style="text-decoration:underline;">David W. Messinger</a>
+                </text> 
+            </div>
+            <div class="row ProceedingsArticleOpenAccessRow">
+                <a href="https://www.spiedigitallibrary.org/" onclick="return AuthorAffiliationToggle(this);" class="ProceedingsArticleOpenAccessAnchorText">Author Affiliations +</a>
+                <div id="affiliations" style="display:none;">
+
+                        <b>Yang  Hu</b>
+<b>,</b>                        <b>Eli  Saber</b>
+<b>,</b>                        <b>Sildomar  Monteiro</b>
+<b>,</b>                        <b>Nathan D. Cahill</b>
+<b>,</b>                        <b>David W. Messinger</b>
+                            <br>Rochester Institute of Technology (United States)    
+                </div>
+
+            </div>
+
+        <div class="row ProceedingsArticleOpenAccessFooterRow">
+
+                <div class="col-xs-12 ProceedingsArticleOpenAccessContentTextBackGround" style="margin-left:0px;width:100% !important;">
+                        <div class="row ProceedingsArticleOpenAccessFooterTextRow">
+                            <text><a class="ProceedingsArticleOpenAccessAnchor" href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/9405.toc">Proceedings Volume 9405, Image Processing: Machine Vision Applications VIII;</a> 940510  (2015);  doi: 10.1117/12.2083374<br>Event: <a class="ProceedingsArticleOpenAccessAnchor" style="text-decoration:underline;cursor:pointer;" href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/browse/SPIE-Electronic-Imaging/2015">SPIE/IS&amp;T Electronic Imaging</a>, 2015, San Francisco, California, United States</text>
+                        </div>
+                </div>
+
+
+        </div>
+
+
+    </div>
+</div>
+
+                </div>
+                <div id="divFilterMenu" style="height: 64px;"><div id="navbar" class="navbar-collapse background-transparent" style="width: navbarWidth2">
+        <ul id="divMENUBAR" class="nav navbar-nav" style="width:100%;float:left;">
+
+                    <li id="divMENUBARli0" class="dropdown dropdownwidth1 active">
+                        <a id="art" class="dropdown dropdownwidth1 " data-action="ArticleLink" onclick="return OnNavBarClick(&#39;divMENUBARli0&#39;,&#39;ArticleLink&#39;,&#39;Proceedings&#39;,&#39;ARTICLE&#39;,&#39;divMENUBAR&#39;)">
+                            <text class="">
+                                ARTICLE
+                            </text>
+                        </a>
+                    </li>
+                    <li id="divMENUBARli1" class="dropdown dropdownwidth1 ">
+                        <a id="fig" class="dropdown dropdownwidth1 " data-action="ArticleLinkFigureTable" onclick="return OnNavBarClick(&#39;divMENUBARli1&#39;,&#39;ArticleLinkFigureTable&#39;,&#39;Proceedings&#39;,&#39;FIGURES &amp; TABLES&#39;,&#39;divMENUBAR&#39;)">
+                            <text class="">
+                                FIGURES &amp; TABLES
+                            </text>
+                        </a>
+                    </li>
+                    <li id="divMENUBARli2" class="dropdown dropdownwidth1 ">
+                        <a id="ref" class="dropdown dropdownwidth1 " data-action="ArticleLinkReference" onclick="return OnNavBarClick(&#39;divMENUBARli2&#39;,&#39;ArticleLinkReference&#39;,&#39;Proceedings&#39;,&#39;REFERENCES&#39;,&#39;divMENUBAR&#39;)">
+                            <text class="">
+                                REFERENCES
+                            </text>
+                        </a>
+                    </li>
+
+                <li id="divMENUBARli3" class="dropdownwidth ToggleNavbarButton hide" style="border:none;float:right;">
+                    <div class="navbar-btn " style="margin-left:20px;">
+                                <a class="ui-button" id="Button10.1117/12.2083374" onclick="ShowDownloadOptionsDialog(&#39;/proceedings/LogDownloadAttempt?fullDOI=10.1117%2F12.2083374&#39;,0,0);">
+                                    <span style="display:block">
+                                        <text style="text-align:center">DOWNLOAD PDF</text>
+                                    </span>
+                                </a>
+                                <a class="ui-button btn-Save" id="SAVE TO MY LIBRARYButton" onclick="javascript:return ShowSaveToDialog(&#39;10.1117/12.2083374&#39;, &#39;presentation&#39;,[]);">
+                                    <span style="display:block">
+                                        <text style="text-align:center">SAVE TO MY LIBRARY</text>
+                                    </span>
+                                </a>
+                    </div>
+                </li>
+        </ul>
+    </div>
+
+                    
+<div style="border-bottom:1px solid #6d6e70 !important;">
+    
+</div>
+                    
+
+    <div id="divPopupDownloadOptions" class="panel panel-default divPopup AttentionPopupPanel" style="display:none;width:745px;">
+        <div class="panel-body" style="background-color:#ffffff;">
+            <div class="row" style="max-height:200px;">
+                <div class="col-xs-6 DownloadOptionsCol">
+
+
+<script type="text/javascript ">
+    function ShowHidePwd() {
+        var $pwd = $(".pwd");
+        if ($pwd.attr('type') == 'password') {
+            $pwd.attr('type', 'text')
+        }
+        else
+            $pwd.attr('type', 'password')
+    }
+</script>
+
+<div class="panel panel-default PersonalSignInpanel">
+    <div class="panel-body">
+<form action="https://www.spiedigitallibrary.org/accountAjax/PersonalSignIn" id="PersonalSignInForm719" method="post"><input name="__RequestVerificationToken" type="hidden" value="txPcWBnEd18nqHN6GKSqN0uBqvF647W5UT42XknSjrICeXkqHbHhyXszkv8Lg5GcP5uaeTnpBMwmqiU5bL50ffquUNM1">                <div class="form-group" style="Color:#404041;">
+                    <text class="PersonalSignInHeaderText"> PERSONAL SIGN IN</text><br>
+                    <text style="font-family:Arial;font-size:14px;color:#404041"> Full access may be available with your subscription</text>
+                </div>
+                <div id="PersonalSignInErrors719" class="form-group formgroupStyle validation-summary-errors">&nbsp;</div>
+                <div class="form-group" style="Color:#404041;">
+                    <label class="control-label pull-left" for="EmailorUsername">Email or Username</label>
+                    <a class="control-label pull-right" href="https://spie.org/account/forgotusername?redir=https%3a%2f%2fwww.spiedigitallibrary.org%2fconference-proceedings-of-spie%2f9405%2f1%2fClassification-of-hyperspectral-images-based-on-conditional-random-fields%2f10.1117%2f12.2083374.short" style="Font-Family:Arial;Font-Size:12px;Color:#6d6e70;text-decoration:underline;">Forgot your username?</a>
+                    <input class="form-control" data-val="true" data-val-required="Email or Username Required" id="EmailorUsername" name="EmailorUsername" style="width:290px;height:36px;Color:#404041" type="text" value="">
+                    <span class="field-validation-valid" data-valmsg-for="EmailorUsername" data-valmsg-replace="true"></span>
+                    </div>
+                <div class="form-group" style="Color:#404041;">
+                    <label class="control-label pull-left" for="Password">Password</label>
+                    <a class="control-label pull-right" href="https://spie.org/account/forgotpassword?redir=https%3a%2f%2fwww.spiedigitallibrary.org%2fconference-proceedings-of-spie%2f9405%2f1%2fClassification-of-hyperspectral-images-based-on-conditional-random-fields%2f10.1117%2f12.2083374.short" style="Font-Family:Arial;Font-Size:12px;Color:#6d6e70;text-decoration:underline;">Forgot your password?</a>
+                    <div class="input-group input-sm" style="left:-10px;width:300px;">
+                        <input class="form-control input-sm pwd" data-val="true" data-val-required="Password Required" id="Password" name="Password" style="height:36px;Color:#404041;" type="password">
+                        <span class="input-group-addon" style="width:80px;height:36px;background-color:white !important;"><input type="checkbox" id="checkbox" onclick="ShowHidePwd();"><label for="checkbox"><span class="displayCheckbox"></span> Show</label></span>
+                    </div>
+                    <span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+                </div>
+                <div class="checkbox">
+                        <input type="checkbox" id="RememberEmailOrUserName"><label for="RememberEmailOrUserName" style="font-size:11px;Color: #404041;"><span class="displayCheckbox"></span>Remember Email/Username on this computer</label>
+                </div>
+                <div class="checkbox">
+
+                        <input type="checkbox" id="RememberPassword"><label for="RememberPassword" style="font-size:11px;Color: #404041;"><span class="displayCheckbox"></span>Remember Password</label>
+
+                </div>
+                <div class="form-group" style="text-align:center;">
+                    <input type="submit" name="SIGN IN &gt;" value="SIGN IN &gt;" style="width:152px;height:65px;" onclick="postPersonalSignInForm(event,719);">
+                </div>
+                <div class="form-group text-center" style="Font-Family:Arial;Font-Size:14px;Color: #6d6e70;">
+                    No SPIE account? <a href="https://spie.org/account/create/accountinfo" class="defaultUnderline">Create an account </a><br>
+                    or <a href="https://www.spiedigitallibrary.org/Account/shibbolethsignin?redirect=" class="defaultUnderline">Instititional Sign In via Shibboleth</a>
+                </div>
+<input id="loginPaperToSave" name="PaperToSave" type="hidden" value=""><input id="loginPaperToSaveType" name="PaperToSaveType" type="hidden" value=""></form>    </div>
+</div>
+
+<script>
+    function postPersonalSignInForm(event,uid)
+    {
+        event.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: '/Account/SignIn',
+            data: $('#PersonalSignInForm'+uid).serialize(),
+            dataType: 'json',
+            async: false,
+            success: function (result)
+            {
+                if (result.Success)
+                {
+                    if (result.returnURL != "") {
+                        location = result.returnURL + "&returnUrl=" + encodeURIComponent(location.href);
+                    }
+                    else {
+                        window.scrollTo(0, 0);
+                        location.reload();
+                    }
+                    
+                }
+                else
+                {
+                    $('#PersonalSignInErrors' + uid).text(result.Message);
+                }
+            },
+            error: function (result)
+            {
+                $('#PersonalSignInErrors' + uid).text("Sign in failure. Please try again.");
+            }
+        });
+        return false;
+    }
+</script>
+
+                </div>
+                <div class="col-xs-6 DownloadOptionsCol">
+<div class="panel panel-default PurchaseContentPanelDefault">
+    <div class="panel-body">
+        <div class="row PurchaseContentOuterRowPadding">
+                <div class="panel panel-default PurchaseContentPanel">
+                    <div class="panel-heading">
+                        <text class="PurchaseContentText1"> SUBSCRIBE TO DIGITAL LIBRARY</text>
+                    </div>
+                    <div class="panel-body">
+                                <div class="row PurchaseContentRow">
+                                    <text class="PurchaseContentText2 PurchaseContentBoldText">50 downloads per 1-year subscription</text>
+                                </div>
+                                <div class="row PurchaseContentRow">
+                                    <text class="PurchaseContentText2 ">Members: $195</text>
+                                </div>
+                                <div class="row PurchaseContentRow">
+                                    <text class="PurchaseContentText2 ">Non-members: $335</text>
+                                        <a href="http://spie.org/shoppingcart?fuseaction=cartadditem&amp;productid=DLX&amp;qty=50&amp;dl=true" value="ADD TO CART" class="PurchaseContentInput">ADD TO CART</a>
+                                </div>
+                                <div class="row PurchaseContentLinePadding"><div class="center-block PurchaseContentLine"></div></div>
+                                <div class="row PurchaseContentRow">
+                                    <text class="PurchaseContentText2 PurchaseContentBoldText">25 downloads per 1 - year subscription</text>
+                                </div>
+                                <div class="row PurchaseContentRow">
+                                    <text class="PurchaseContentText2 ">Members: $145</text>
+                                </div>
+                                <div class="row PurchaseContentRow">
+                                    <text class="PurchaseContentText2 ">Non-members: $250</text>
+                                        <a href="http://spie.org/shoppingcart?fuseaction=cartadditem&amp;productid=DLX&amp;qty=25&amp;dl=true" value="ADD TO CART" class="PurchaseContentInput">ADD TO CART</a>
+                                </div>
+                    </div>
+                </div>
+                <div class="panel panel-default PurchaseContentPanel1">
+                    <div class="panel-heading">
+                        <text class="PurchaseContentText1"> PURCHASE SINGLE ARTICLE</text>
+                    </div>
+                    <div class="panel-body">
+                                <div class="row PurchaseContentRow">
+                                    <text class="PurchaseContentText2 ">Includes PDF, HTML &amp; Video, when available</text>
+                                </div>
+                                <div class="row PurchaseContentRow">
+                                    <text class="PurchaseContentText2 ">Members: <span class="memberPricing">$14.40</span></text>
+                                </div>
+                                <div class="row PurchaseContentRow">
+                                    <text class="PurchaseContentText2 ">Non-members: <span class="nonMemberPricing">$18.00</span></text>
+                                        <a value="ADD TO CART" class="PurchaseContentInput shoppingCartArticleLink">ADD TO CART</a>
+                                </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+  
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script type="text/javascript">
+
+    function ShowDownloadOptionsDialog(logLink, doi, shoppingCartURL, nonMemberPricing, memberPricing) {
+
+        $('.divPopup').hide();
+        
+        if (nonMemberPricing != 0 && memberPricing != 0) {
+
+            
+            $(".nonMemberPricing").each(function (index, item) {
+                $(item)[0].innerText = nonMemberPricing;
+            });
+
+            $(".memberPricing").each(function (index, item) {
+                $(item)[0].innerText = memberPricing;
+            });
+            
+        }
+        $(".shoppingCartArticleLink").attr('href', shoppingCartURL + '/shoppingcart?doi=' + encodeURIComponent(doi) + '&dl=true');
+        $("#divPopupDownloadOptions").dialog(
+            {
+
+                    width: 733,
+                    height: 540,
+                modal: true,
+                resizable: false,
+                draggable: false,
+                closeOnEscape: true,
+                zIndex: 999,
+                title: 'ATTENTION REQUIRED:'
+            }
+        );
+
+        $.ajax(logLink);
+
+        return false;
+    }
+
+</script>
+                    
+<div id="downloadConfirmationDialog" class="panel panel-default divPopup" style="display:none;padding:0;height:225px !important;margin:0;">
+    <div class="panel-body" style="background-color:#ffffff;padding:0;padding-top:20px;">
+        <div class="row DownloadConfirmationPadding">
+            <div id="downloadConfirmationContent" class="DownloadConfirmationText">This will count as one of your downloads.</div>
+            <div id="downloadConfirmationVideoAccess" style="display:none; margin-top:12px;" class="DownloadConfirmationText">You will have access to both the presentation and article (if available).</div>
+        </div>
+        <div class="row DownloadConfirmationPadding">
+            <div class="navbar-btn" style="display:block;">
+                <a id="downloadConfirmationLink" class="ui-button DownloadConfirmationButton" href="https://www.spiedigitallibrary.org/" onclick="DownloadWithRedirect();" target="_blank">DOWNLOAD NOW</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+                    
+
+<script type="text/javascript">
+
+    function ShowHidePwdSignIn()
+    {
+        var $pwd = $(".pwdSignIn");
+        if ($pwd.attr('type') == 'password')
+        {
+            $pwd.attr('type', 'text')
+        }
+        else
+            $pwd.attr('type', 'password')
+    }
+
+</script>
+<style>
+    .formgroupStyle {
+        width: 290px;
+    }
+
+    .panelSignIn {
+        width: 360px;
+        right: -10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+</style>
+
+
+<div id="TokenUseSigninDialog" class="panel panel-default divPopup" style="display:none;">
+    <div class="row panelSignIn">
+<form action="https://www.spiedigitallibrary.org/accountAjax/SignIn" id="TokenUseSignInForm" method="post">            <input id="TokenUseRedirect" name="Redirect" type="hidden" value="">
+<input name="__RequestVerificationToken" type="hidden" value="847rz_5ZQV2m6neevCuv1M2O_Y3FhGGUEo2B-LFJf8JHL9zYPvtR_OvWmKqkjFWZPC1JDRHSlBiz1IKcKFfUIt_0g0U1">            <div>This content is available for download via your institution's subscription. To access this item, please sign in to your personal account.</div>
+            <div id="TokenUseSignInErrors" class="form-group formgroupStyle validation-summary-errors">&nbsp;</div>
+            <div class="form-group formgroupStyle">
+                <label class="control-label pull-left" for="EmailorUsername">Email or Username</label>
+                <a class="control-label pull-right" href="https://spie.org/account/forgotusername?redir=https%3a%2f%2fwww.spiedigitallibrary.org%2fconference-proceedings-of-spie%2f9405%2f1%2fClassification-of-hyperspectral-images-based-on-conditional-random-fields%2f10.1117%2f12.2083374.short" style="Font-Family:Arial;Font-Size:12px;Color:#6d6e70;text-decoration:underline;">Forgot your username?</a>
+                <input class="form-control" data-val="true" data-val-required="Email or Username Required" id="TokenUseEmailorUsername" name="EmailorUsername" style="width:290px;height:36px;Color:#404041;" type="text" value="">
+                <span class="field-validation-valid" data-valmsg-for="EmailorUsername" data-valmsg-replace="true"></span>
+            </div>
+            <div class="form-group formgroupStyle">
+                <label class="control-label pull-left" for="Password">Password</label>
+
+                <a class="control-label pull-right" href="https://spie.org/account/forgotpassword?redir=https%3a%2f%2fwww.spiedigitallibrary.org%2fconference-proceedings-of-spie%2f9405%2f1%2fClassification-of-hyperspectral-images-based-on-conditional-random-fields%2f10.1117%2f12.2083374.short" style="Font-Family:Arial;Font-Size:12px;Color:#6d6e70;text-decoration:underline;">Forgot your password?</a>
+
+                <div class="input-group input-sm" style="left:-10px;width:300px;">
+                    <input class="form-control input-sm pwdSignIn" data-val="true" data-val-required="Password Required" id="TokenUsePassword" name="Password" style="height:36px;Color:#404041;" type="password">
+                    <span class="input-group-addon" style="width:80px;height:36px;"><input type="checkbox" id="checkbox" onclick="ShowHidePwdSignIn();"> <label for="checkbox"><span class="displayCheckbox"></span> Show</label></span>
+                </div>
+                <span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="RememberEmailOrUserName"><label for="RememberEmailOrUserName" style="font-size:11px;Color: #404041;"><span class="displayCheckbox"></span>Remember Email/Username on this computer</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="RememberPassword"><label for="RememberPassword" style="font-size:11px;Color: #404041;"><span class="displayCheckbox"></span>Remember Password</label>
+            </div>
+            <div class="form-group">
+                <input type="submit" name="SIGN IN &gt;" value="SignIn &gt;" style="width:152px;height:65px;Color:#404041;" class="center-block" onclick="postTokenUseSignInForm(event);">
+            </div>
+            <div class="form-group text-center">
+                No SPIE account? <a href="https://spie.org/account/create/accountinfo">Create an account </a><br>
+            </div>
+</form>    </div>
+</div>
+
+                    
+
+
+
+<style>
+    #modal-container .modal-content {
+        width: 330px !important;
+        height: 450px !important;
+    }
+
+    div[aria-describedby="divPopupSaveTo"].ui-dialog {
+        z-index:2010;
+    }
+    div[aria-describedby="divPopupCreateFolder"].ui-dialog {
+        z-index: 2010;
+    }
+    div[aria-describedby="divPopupLogin"].ui-dialog {
+        z-index: 2010;
+    }
+</style>
+<div id="divPopupSaveTo" class="panel panel-default divPopup" style="display:none;overflow-x: hidden;">
+    <div class="panel-body" style="background-color:#ffffff;">
+        <div class="row SaveToRowPadding">
+                <form action="https://www.spiedigitallibrary.org/AccountAjax/saveToFolder" method="post" name="saveToForm">
+                        <div class="row SaveToRowPadding1">
+                            <div class="SaveToDisplay-cell" style="width:100%;">
+                                <text class="text-center SaveToBoldText">My Library</text>
+                            </div>
+                            <div class="col-md-3 SaveToDisplay-cell">
+                                <div class="checkbox pull-right">
+                                    <input type="checkbox" class="SaveToCheckBox" name="SaveToCheckBox_My_-1_Library" id="SaveToCheckBox_My_-1_Library"><label for="SaveToCheckBox_My_-1_Library"><span class="displayCheckbox"></span></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row SaveToLine"></div>
+                                            <div style="margin-top:10px;">
+                            You currently do not have any folders to save your paper to! Create a new folder below.
+                        </div>
+                    <div class="row SaveToRowPadding1">
+                        <button type="button" id="CreateNewFolder" class="SaveToCreatebtn center-block">
+                            Create New Folder
+                        </button>
+                    </div>
+                    <input type="hidden" name="PaperId" id="SaveToPaperId">
+                    <input type="hidden" name="PaperType" id="SaveToPaperType">
+                    <input type="hidden" name="UrlFragment" id="SaveToUrlFragment">
+                    <div class="row SaveToRowPadding1">
+                        <button type="button" id="SAVE &gt;" class="SaveToSubmitbtn center-block">
+                            SAVE &gt;
+                        </button>
+                    </div>
+                </form>
+            
+
+
+        </div>
+        
+    </div>
+</div>
+
+<script language="javascript" type="text/javascript">
+
+
+    $(document).ready(function () {
+        $(".SaveToSubmitbtn").click(function (elem) {
+
+            if (window.location.hash)
+            {
+                $("#SaveToUrlFragment")[0].value = window.location.hash;
+            }
+            document.saveToForm.submit();
+        });
+
+    });
+    function ShowSaveToDialog(doi, type, checkBoxId) {
+        var myTitle = 'SAVE TO:';
+        if (checkBoxId != null) {
+            $(".SaveToCheckBox").prop('checked', false);
+
+            //if item is part of only one folder, just get that specific id
+            //if item is part of multiple folders, get an array
+            if (typeof (checkBoxId) == 'string') {
+                $("#" + checkBoxId).prop('checked', true);
+            }
+            else if (checkBoxId instanceof Array) {
+                for (var i = 0; i < checkBoxId.length; i++) {
+                    $("#" + checkBoxId[i]).prop('checked', true);
+                }
+
+            }
+
+
+        }
+
+
+        $("#CreateNewFolder").click(function () {
+            return ShowFolderCreateDialog(doi, type);
+        })
+
+        $('.ui-dialog-content').dialog('close');
+        $("#SaveToPaperId").val(doi);
+        $("#SaveToPaperType").val(type);
+
+
+            
+            ShowLoginWithSave();
+            
+
+
+
+        return false;
+    }
+
+
+    function ShowLoginWithSave() {
+
+        var doi = $("#SaveToPaperId").val();
+        var type = $("#SaveToPaperType").val();
+
+        $("#loginPaperToSave").val(doi);
+        $("#loginPaperToSaveType").val(type);
+        $("#LoginComment").text('You must be logged in to use My Library.');
+        return ShowLoginDialog();
+    }
+
+
+</script>
+
+
+
+                    <div id="divPopupCreateFolder" class="panel panel-default divPopup" style="display: none;background-color:#ffffff;padding-top:0px;">
+    <div class="panel-body" style="padding-left:20px;">
+
+<form action="https://www.spiedigitallibrary.org/accountAjax/createFolder" id="postform" method="post">            <div class="row AlertRowPadding" style="margin-bottom:25px;">
+                <label for="folderName" style="display:block;margin-bottom:10px;">
+                    Folder Name
+                </label>
+                <input id="folderName" name="FolderName" required="" type="text" value="">
+            </div>
+            <div class="row AlertRowPadding">
+                <label for="folderDescription" style="display:block;margin-bottom:10px;">
+                    Folder Description
+                </label>
+                <textarea cols="40" id="folderDescription" name="FolderDescription" rows="4"></textarea>
+            </div>
+            <div class="row ErratumAlertRowPadding">
+                <button type="submit" id="saveAlert" class="ErratumAlertButton center-block GothamNarrowMedium" style="font-family:&#39;Gotham Narrow A&#39;,&#39;Gotham Narrow B&#39;;">
+                    SAVE
+                </button>
+            </div>
+            <input type="hidden" name="PaperId" id="CreateFolderPaperId">
+            <input type="hidden" name="PaperType" id="CreateFolderPaperType">
+</form>
+
+    </div>
+</div>
+
+<script language="javascript" type="text/javascript">
+
+    function ShowFolderCreateDialog(doi, type) {
+
+        
+        $("#CreateFolderPaperId").val(doi);
+        $("#CreateFolderPaperType").val(type);
+
+
+        $('.ui-dialog-content').dialog('close');
+        $("#divPopupCreateFolder").dialog(
+                        {
+                            width: 320,
+                            height: 400,
+                            modal: true,
+                            resizable: false,
+                            draggable: false,
+                            closeOnEscape:true,
+                            zIndex: 2010,
+                            title: ' Create Folder'
+                        }
+        );
+
+        return false;
+    }
+
+</script>
+
+
+
+                </div>
+
+                <div class="PAHArticleCol" id="mainArticle" style="height: 1558px;">
+                    <div id="divArticleContent">
+                                <script language="javascript" type="text/javascript">
+            function ArticleContentVisibleToggle(obj, divID) {
+                var div = document.getElementById(divID);
+                if (div.style.display == 'none')
+                {
+                    div.style.display = 'block';
+                    obj.innerText = 'Load Less -';
+                }
+                else
+                {
+                    div.style.display = 'none';
+                    obj.innerText = 'Load More +';
+                }
+                return false;
+            }
+            function ExcerptVisibleToggle(className, divID) {
+
+                var div = document.getElementById(divID);
+                var obj = $("." + className);
+
+                if (div.style.display == 'none') {
+                    div.style.display = 'block';
+                    //obj.text('Hide Excerpt -');
+                    $('#aToggleText').text('Hide Excerpt');
+                    $('#aToggleSign').text('-');
+                }
+                else {
+                    div.style.display = 'none';
+                    //obj.text('View Excerpt +');
+                    $('#aToggleText').text('View Excerpt');
+                    $('#aToggleSign').text('+');
+                }
+                return false;
+            }
+            MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+        </script>
+
+
+<div class="panel panel-default ArticleContentPanel">
+    <div class="panel-body">
+        
+        <div id="divARTICLECONTENTTop">
+                <div class="div0" style="">
+                    <div class="row ArticleContentHeadRow"><text class="ArticleContentBoldText">Abstract</text></div>
+
+                                        <div class="row ArticleContentRow">
+                        <text class="ArticleContentText">A significant increase in the availability of high resolution hyperspectral images has led to the need for developing pertinent techniques in image analysis, such as classification. Hyperspectral images that are correlated spatially and spectrally provide ample information across the bands to benefit this purpose. Conditional Random Fields (CRFs) are discriminative models that carry several advantages over conventional techniques: no requirement of the independence assumption for observations, flexibility in defining local and pairwise potentials, and an independence between the modules of feature selection and parameter leaning. In this paper we present a framework for classifying remotely sensed imagery based on CRFs. We apply a Support Vector Machine (SVM) classifier to raw remotely sensed imagery data in order to generate more meaningful feature potentials to the CRFs model. This approach produces promising results when tested with publicly available AVIRIS Indian Pine imagery.<div class="spacer"></div><div>© (2015) COPYRIGHT Society of Photo-Optical Instrumentation Engineers (SPIE). Downloading of the abstract is permitted for personal use only.</div></text>
+                    </div>
+                </div>
+        </div>
+        
+
+            <div class="row ArticleContentRow">
+              
+                
+<div class="panel panel-default ArticleContentPanel">
+    <div class="panel-body ArticleContent">
+        <div class="row ArticleContentHeadRow">
+            <text class="ArticleContentBoldText">Citation</text>
+            <a class="jumper" href="https://www.spiedigitallibrary.org/" onclick="ShowDownloadCitationDialog()" data-id="divArticleMenu"><text class="ArticleContentCitationText">Download Citation</text><b class="caret" style="color:#000000"></b></a>
+        </div>
+        <div class="row  ArticleContentRow">
+            <text class="ArticleContentText">
+                            <a href="https://www.spiedigitallibrary.org/profile/Yang.Hu-148317" class="ArticleContentText" style="text-decoration:underline;">Yang  Hu</a>,
+                            Eli  Saber,
+                            Sildomar  Monteiro,
+                            <a href="https://www.spiedigitallibrary.org/profile/Nathan.Cahill-45237" class="ArticleContentText" style="text-decoration:underline;">Nathan D. Cahill</a>,
+                            <a href="https://www.spiedigitallibrary.org/profile/David.Messinger-45735" class="ArticleContentText" style="text-decoration:underline;">David W. Messinger</a>,
+                "Classification of hyperspectral images based on conditional random fields", Proc. SPIE 9405, Image Processing: Machine Vision Applications VIII, 940510 (27 February 2015); doi: 10.1117/12.2083374; <a href="http://dx.doi.org/10.1117/12.2083374" class="ArticleContentSignText" style="text-decoration:underline;" target="_blank">http://dx.doi.org/10.1117/12.2083374</a>
+            </text>
+        </div>
+        <div class="row  ArticleContentRow" style="margin-top:15px;">
+            <text class="ArticleContentText"></text>
+        </div>
+    </div>
+</div>
+
+            </div>
+    </div>
+</div>
+                        
+
+
+                    </div>
+                    <div id="divAccessFullArticle" style="padding-left:0px !important;">
+
+<div class="modal-body">
+    <div id="divPopupFullAccess" class="panel panel-default divPopup AccessFullArticlePanel">
+        <div class="panel-heading AccessFullArticleHeader">
+            ACCESS THE FULL ARTICLE
+        </div>
+        <div class="panel-body">
+            <div class="row" style="max-height:200px;">
+                <div class="col-xs-6 AccessFullArticleCol">
+
+
+<script type="text/javascript ">
+    function ShowHidePwd() {
+        var $pwd = $(".pwd");
+        if ($pwd.attr('type') == 'password') {
+            $pwd.attr('type', 'text')
+        }
+        else
+            $pwd.attr('type', 'password')
+    }
+</script>
+
+<div class="panel panel-default PersonalSignInpanel">
+    <div class="panel-body">
+<form action="https://www.spiedigitallibrary.org/accountAjax/PersonalSignIn" id="PersonalSignInForm970" method="post"><input name="__RequestVerificationToken" type="hidden" value="kMWXFlZ_cwJWtnNULLmcz5a6-mZRo8XdNfLcvmaa1mX5n9a6NKWzXb3GZRefWM6ZAreLtGyR0K_uXJGGcAoeF4nRMQg1">                <div class="form-group" style="Color:#404041;">
+                    <text class="PersonalSignInHeaderText"> PERSONAL SIGN IN</text><br>
+                    <text style="font-family:Arial;font-size:14px;color:#404041"> Full access may be available with your subscription</text>
+                </div>
+                <div id="PersonalSignInErrors970" class="form-group formgroupStyle validation-summary-errors">&nbsp;</div>
+                <div class="form-group" style="Color:#404041;">
+                    <label class="control-label pull-left" for="EmailorUsername">Email or Username</label>
+                    <a class="control-label pull-right" href="https://spie.org/account/forgotusername?redir=https%3a%2f%2fwww.spiedigitallibrary.org%2fconference-proceedings-of-spie%2f9405%2f1%2fClassification-of-hyperspectral-images-based-on-conditional-random-fields%2f10.1117%2f12.2083374.short" style="Font-Family:Arial;Font-Size:12px;Color:#6d6e70;text-decoration:underline;">Forgot your username?</a>
+                    <input class="form-control" data-val="true" data-val-required="Email or Username Required" id="EmailorUsername" name="EmailorUsername" style="width:290px;height:36px;Color:#404041" type="text" value="">
+                    <span class="field-validation-valid" data-valmsg-for="EmailorUsername" data-valmsg-replace="true"></span>
+                    </div>
+                <div class="form-group" style="Color:#404041;">
+                    <label class="control-label pull-left" for="Password">Password</label>
+                    <a class="control-label pull-right" href="https://spie.org/account/forgotpassword?redir=https%3a%2f%2fwww.spiedigitallibrary.org%2fconference-proceedings-of-spie%2f9405%2f1%2fClassification-of-hyperspectral-images-based-on-conditional-random-fields%2f10.1117%2f12.2083374.short" style="Font-Family:Arial;Font-Size:12px;Color:#6d6e70;text-decoration:underline;">Forgot your password?</a>
+                    <div class="input-group input-sm" style="left:-10px;width:300px;">
+                        <input class="form-control input-sm pwd" data-val="true" data-val-required="Password Required" id="Password" name="Password" style="height:36px;Color:#404041;" type="password">
+                        <span class="input-group-addon" style="width:80px;height:36px;background-color:white !important;"><input type="checkbox" id="checkbox" onclick="ShowHidePwd();"><label for="checkbox"><span class="displayCheckbox"></span> Show</label></span>
+                    </div>
+                    <span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+                </div>
+                <div class="checkbox">
+                        <input type="checkbox" id="RememberEmailOrUserName"><label for="RememberEmailOrUserName" style="font-size:11px;Color: #404041;"><span class="displayCheckbox"></span>Remember Email/Username on this computer</label>
+                </div>
+                <div class="checkbox">
+
+                        <input type="checkbox" id="RememberPassword"><label for="RememberPassword" style="font-size:11px;Color: #404041;"><span class="displayCheckbox"></span>Remember Password</label>
+
+                </div>
+                <div class="form-group" style="text-align:center;">
+                    <input type="submit" name="SIGN IN &gt;" value="SIGN IN &gt;" style="width:152px;height:65px;" onclick="postPersonalSignInForm(event,970);">
+                </div>
+                <div class="form-group text-center" style="Font-Family:Arial;Font-Size:14px;Color: #6d6e70;">
+                    No SPIE account? <a href="https://spie.org/account/create/accountinfo" class="defaultUnderline">Create an account </a><br>
+                    or <a href="https://www.spiedigitallibrary.org/Account/shibbolethsignin?redirect=" class="defaultUnderline">Instititional Sign In via Shibboleth</a>
+                </div>
+<input id="loginPaperToSave" name="PaperToSave" type="hidden" value=""><input id="loginPaperToSaveType" name="PaperToSaveType" type="hidden" value=""></form>    </div>
+</div>
+
+<script>
+    function postPersonalSignInForm(event,uid)
+    {
+        event.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: '/Account/SignIn',
+            data: $('#PersonalSignInForm'+uid).serialize(),
+            dataType: 'json',
+            async: false,
+            success: function (result)
+            {
+                if (result.Success)
+                {
+                    if (result.returnURL != "") {
+                        location = result.returnURL + "&returnUrl=" + encodeURIComponent(location.href);
+                    }
+                    else {
+                        window.scrollTo(0, 0);
+                        location.reload();
+                    }
+                    
+                }
+                else
+                {
+                    $('#PersonalSignInErrors' + uid).text(result.Message);
+                }
+            },
+            error: function (result)
+            {
+                $('#PersonalSignInErrors' + uid).text("Sign in failure. Please try again.");
+            }
+        });
+        return false;
+    }
+</script>
+
+                </div>
+                <div class="col-xs-6 AccessFullArticleCol">
+<div class="panel panel-default PurchaseContentPanelDefault">
+    <div class="panel-body">
+            <div class="row">
+                <text class="PurchaseContentHeaderText">PURCHASE THIS CONTENT</text><br>
+            </div>
+        <div class="row PurchaseContentOuterRowPadding">
+                <div class="panel panel-default PurchaseContentPanel">
+                    <div class="panel-heading">
+                        <text class="PurchaseContentText1"> SUBSCRIBE TO DIGITAL LIBRARY</text>
+                    </div>
+                    <div class="panel-body">
+                                <div class="row PurchaseContentRow">
+                                    <text class="PurchaseContentText2 PurchaseContentBoldText">50 downloads per 1-year subscription</text>
+                                </div>
+                                <div class="row PurchaseContentRow">
+                                    <text class="PurchaseContentText2 ">Members: $195</text>
+                                </div>
+                                <div class="row PurchaseContentRow">
+                                    <text class="PurchaseContentText2 ">Non-members: $335</text>
+                                        <a href="http://spie.org/shoppingcart?fuseaction=cartadditem&amp;productid=DLX&amp;qty=50&amp;dl=true" value="ADD TO CART" class="PurchaseContentInput">ADD TO CART</a>
+                                </div>
+                                <div class="row PurchaseContentLinePadding"><div class="center-block PurchaseContentLine"></div></div>
+                                <div class="row PurchaseContentRow">
+                                    <text class="PurchaseContentText2 PurchaseContentBoldText">25 downloads per 1 - year subscription</text>
+                                </div>
+                                <div class="row PurchaseContentRow">
+                                    <text class="PurchaseContentText2 ">Members: $145</text>
+                                </div>
+                                <div class="row PurchaseContentRow">
+                                    <text class="PurchaseContentText2 ">Non-members: $250</text>
+                                        <a href="http://spie.org/shoppingcart?fuseaction=cartadditem&amp;productid=DLX&amp;qty=25&amp;dl=true" value="ADD TO CART" class="PurchaseContentInput">ADD TO CART</a>
+                                </div>
+                    </div>
+                </div>
+                <div class="panel panel-default PurchaseContentPanel1">
+                    <div class="panel-heading">
+                        <text class="PurchaseContentText1"> PURCHASE SINGLE ARTICLE</text>
+                    </div>
+                    <div class="panel-body">
+                                <div class="row PurchaseContentRow">
+                                    <text class="PurchaseContentText2 ">Includes PDF, HTML &amp; Video, when available</text>
+                                </div>
+                                <div class="row PurchaseContentRow">
+                                    <text class="PurchaseContentText2 ">Members: <span class="memberPricing">$14.40</span></text>
+                                </div>
+                                <div class="row PurchaseContentRow">
+                                    <text class="PurchaseContentText2 ">Non-members: <span class="nonMemberPricing">$18.00</span></text>
+                                        <a href="https://spie.org/shoppingcart?dl=true&amp;doi=10.1117%2f12.2083374" value="ADD TO CART" class="PurchaseContentInput">ADD TO CART</a>
+                                </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+  
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<script language="javascript" type="text/javascript">
+
+    function ShowFullAccessDialog() {
+        $('.divPopup').hide();
+        $("#divPopupFullAccess").dialog(
+                        {
+                            width: 733,
+                            height: 600,
+                            modal: true,
+                            resizable: false,
+                            draggable: false,
+                            closeOnEscape: true,
+                            zIndex: 999,
+                            title: 'ACCESS THE FULL VIDEO:'
+                        }
+        );
+
+        $(".AccessFullArticleHeader").hide();
+
+        return false;
+    }
+
+</script>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-4 PAHProceedingsArticleCol" id="rightRail">
+
+
+<div class="panel panel-default ProceedingsArticlePanel ">
+    <div class="panel-body">
+        <div class="row ProceedingsArticleHeadingRow ProceedingsArticleHeadingRowPadding2">
+            <text class="ProceedingsArticleText">PROCEEDINGS<br></text>
+            <text class="ProceedingsArticleText ProceedingsArticleSmallFont">8 PAGES</text>
+        </div>
+        <div class="row"><hr class="center-block ProceedingsArticleLine"></div>
+        <div class="row  ProceedingsArticleRow ProceedingsArticleRowPadding2">
+                <a class="ui-button ProceedingArticleButton1 " onclick="ShowDownloadOptionsDialog(&#39;/proceedings/LogDownloadAttempt?fullDOI=10.1117%2F12.2083374&#39;,&#39;10.1117/12.2083374&#39;,&#39;https://spie.org&#39;,0,0);">
+                    <span style="display:block;">
+                        <text class="ProceedingArticleButton2Text">
+                            DOWNLOAD PDF
+                        </text>
+                    </span>
+                </a>
+
+            <a class="ui-button ProceedingArticleButton2" id="btnSave" onclick="return ShowSaveToDialog(&#39;10.1117/12.2083374&#39;, &#39;presentation&#39;,[]);">
+                <span style="display:block;">
+                    <text class="pull-right ProceedingArticleButton2Text">+</text>
+                    <text class="ProceedingArticleButton2Text">
+                        SAVE TO MY LIBRARY
+                    </text>
+                </span>
+            </a>
+        </div>
+
+            <div class="row"><hr class="center-block ProceedingsArticleLine"></div>
+
+            <div class="row ProceedingsArticleImageRow ProceedingsArticleImageRowPadding2">
+                <div class="col-lg-2" style="padding:0px;border:none !important;"></div>
+                <div class="col-lg-4" style="padding:0px;border:none !important;">
+                    
+                    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                    <a href="http://s7.addthis.com/js/250/addthis_widget.js?pub=addthisservice" onmouseover="return addthis_open(this, &#39;&#39;, window.location.href, &#39;SPIEDigitalLibrary.org: PROCEEDINGS&#39;)" onmouseout="addthis_close()" onclick="return addthis_open(this, &#39;&#39;, window.location.href, &#39;SPIEDigitalLibrary.org: PROCEEDINGS&#39;)">
+                        <div id="share_button" style="">
+                            <img style="" src="./Classification of hyperspectral images based on conditional random fields_files/Share_white_icon.png" border="0" alt="">
+                            <div class="caption"><text class="ProceedingsArticleImageCaptionText">SHARE</text></div>
+                        </div>
+                    </a>
+
+                    <script type="text/javascript" src="./Classification of hyperspectral images based on conditional random fields_files/addthis_widget.js.download"></script>
+                    <script type="text/javascript">
+                        var addthis_config = {
+                            services_compact: 'email, twitter, facebook, linkedin, blogger, reddit',
+                            services_exclude: 'print, stumbleupon'
+                        };
+                    </script>
+
+                </div>
+                <div class="col-lg-4" style="padding:0px;">
+                    <a onclick="ShowDownloadCitationDialog();" style="cursor:pointer;">
+                        <img src="./Classification of hyperspectral images based on conditional random fields_files/GetCitation.png" style="margin:5px;">
+                        <div class="caption"><text class="ProceedingsArticleImageCaptionText">GET CITATION</text></div>
+                    </a>
+                </div>
+                
+                
+            </div>
+
+
+    </div>
+    </div>
+    <script>
+
+        function printReceipt() {
+            var mywindow = window.open('', 'PRINT', '');
+
+
+            mywindow.document.write('<html><head><title>' + document.title + '</title>');
+
+            mywindow.document.write('<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7583652/759528/css/fonts.css" /></head><body >');
+            mywindow.document.write('<h1 style="width:700px;margin:auto;"><div style="margin:-15px -15px 0px -15px;">' + document.title + '</div></h1>');
+            mywindow.document.write('<div id="divARTICLECONTENTTop" style="width:700px;margin:auto;">' + document.getElementById('divARTICLECONTENTTop').innerHTML + '</div>');
+            mywindow.document.write('<script type="text/javascript" async  src="~/Scripts/MathJax-2.7.1/MathJax.js?config=MML_CHTML"><\/script></body></html>');
+
+            mywindow.document.close(); // necessary for IE >= 10
+            mywindow.focus(); // necessary for IE >= 10*/
+
+            // mywindow.print();
+        };
+
+
+    </script>
+
+
+                <div class="columnBorderLeft">
+                    <div class="PAHSpace" style="padding-top:0; padding-left:27px;">
+
+<div class="panel panel-default SPIEPanel">
+    <div class="panel-body" style="">
+        <div class="row" style="">
+        </div>
+        <div class="row" style="text-align:center;">
+                <div class="col-lg-10" style="padding:0px;margin:0px;">
+
+                        &lt;
+                        <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/9405/94050Z/Fused-methods-for-visual-saliency-estimation/10.1117/12.2079626.full"><text class="ProceedingsArticleMenuAnchorText">Previous Article</text></a>
+                        <div style="margin-left:5px;margin-right:5px;display:inline-block;">|</div>
+                                            <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/9405/940511/Pro-and-con-of-using-GenIcam-based-standard-interfaces-GEV/10.1117/12.2076616.full"><text class="ProceedingsArticleMenuAnchorText">Next Article</text></a>
+                        &gt;
+
+                </div>
+        </div>
+
+       
+    </div>
+</div>
+
+<script>
+    function Print() {
+        window.print();
+        return false;
+    }
+</script>
+
+
+                    </div>
+                    <div class="PAHSpace adSpace">
+
+
+<div class="panel panel-default DFPAdPanel">
+    <div class="panel-body">
+
+
+
+            <div class="row">
+                <div id="div-gpt-ad-1483661906416-0" style="height:250px; width:300px;">
+                    <script>
+                        googletag.cmd.push(function () { googletag.display('div-gpt-ad-1483661906416-0'); });
+                    </script><div id="google_ads_iframe_/11170898/CCRightRailtest_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/11170898/CCRightRailtest_0" title="3rd party ad content" name="google_ads_iframe_/11170898/CCRightRailtest_0" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" src="./Classification of hyperspectral images based on conditional random fields_files/saved_resource(1).html"></iframe></div>
+                </div>
+            </div>
+
+
+    </div>
+</div>
+
+                    </div>
+
+                    <div class="PAHSpace adSpace">
+
+
+<div class="panel panel-default DFPAdPanel">
+    <div class="panel-body">
+
+
+
+            <div class="row">
+                <div id="div-gpt-ad-1491947084194-0" style="height:250px; width:300px;">
+                    <script>
+                        googletag.cmd.push(function () { googletag.display('div-gpt-ad-1491947084194-0'); });
+                    </script><div id="google_ads_iframe_/11170898/CCRightRail2_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/11170898/CCRightRail2_0" title="3rd party ad content" name="google_ads_iframe_/11170898/CCRightRail2_0" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" src="./Classification of hyperspectral images based on conditional random fields_files/saved_resource(2).html"></iframe></div>
+                </div>
+            </div>
+
+
+    </div>
+</div>
+
+                    </div>
+                    <div>
+        <script language="javascript" type="text/javascript">
+            function KeywordVisibleToggle(obj, divID)
+            {
+                var div = document.getElementById(divID);
+                if (div.style.display == 'none')
+                {
+                    div.style.display = 'block';
+                    obj.innerText = 'Show fewer keywords -';
+                }
+                else
+                {
+                    div.style.display = 'none';
+                    obj.innerText = 'Show All keywords +';             
+                }
+                      
+                return false;
+            }
+        </script>
+
+<div class="panel-body KeyWordsPanel">
+    <div class="row KeywordsHeadrow">
+        <text class="keywordsTextHeading">KEYWORDS</text>
+    </div>
+    <div id="divKEYWORDSTop">
+            <div class="row Keywordsrow">
+                <text class="keywordsText">Hyperspectral imaging</text>
+                <div class="keywordsline" style="width:100%"><hr></div>
+            </div>
+            <div class="row Keywordsrow">
+                <text class="keywordsText">Data modeling</text>
+                <div class="keywordsline" style="width:77%"><hr></div>
+            </div>
+            <div class="row Keywordsrow">
+                <text class="keywordsText">Feature selection</text>
+                <div class="keywordsline" style="width:30%"><hr></div>
+            </div>
+            <div class="row Keywordsrow">
+                <text class="keywordsText">Image classification</text>
+                <div class="keywordsline" style="width:30%"><hr></div>
+            </div>
+            <div class="row Keywordsrow">
+                <text class="keywordsText">RGB color model</text>
+                <div class="keywordsline" style="width:30%"><hr></div>
+            </div>
+            <div class="row Keywordsrow">
+                <text class="keywordsText">Image analysis</text>
+                <div class="keywordsline" style="width:24%"><hr></div>
+            </div>
+            <div class="row Keywordsrow">
+                <text class="keywordsText">Image resolution</text>
+                <div class="keywordsline" style="width:18%"><hr></div>
+            </div>
+</div><div id="divKEYWORDSMore" style="display: none;">            <div class="row Keywordsrow">
+                <text class="keywordsText">Sensors</text>
+                <div class="keywordsline" style="width:12%"><hr></div>
+            </div>
+            <div class="row Keywordsrow">
+                <text class="keywordsText">Tolerancing</text>
+                <div class="keywordsline" style="width:12%"><hr></div>
+            </div>
+            <div class="row Keywordsrow">
+                <text class="keywordsText">Microelectronics</text>
+                <div class="keywordsline" style="width:6%"><hr></div>
+            </div>
+    </div>
+    <div class="row">
+            <h5 class="KeywordsActionrow">
+                <a href="https://www.spiedigitallibrary.org/#" onclick="return KeywordVisibleToggle(this, &#39;divKEYWORDSMore&#39;)">Show All Keywords</a>
+            </h5>
+        
+    </div>
+</div>
+
+
+                    </div>
+
+
+
+                    <div class="PAHSpace">
+        <script language="javascript" type="text/javascript">
+            function RelatedContentVisibleToggle(obj, divID)
+            {
+                var div = document.getElementById(divID);
+                if (div.style.display == 'none')
+                {
+                    div.style.display = 'block';
+                    obj.innerText = 'View Fewer -';
+                }
+                else
+                {
+                    div.style.display = 'none';
+                    obj.innerText = 'View More +';
+                }
+                
+                return false;
+            }
+        </script>
+
+
+    <div class="panel-body RelatedContentPanel">
+        <div class="row">
+            <text class="pull-left RelatedContentHead">RELATED CONTENT</text>
+        </div>
+        <div class="row">
+            <div class="RelatedContentline"><hr></div>
+        </div>
+
+        <div id="divRELATEDCONTENTTop">
+                <div class="RelatedContentRowPadding">
+
+                </div>
+                <div class="RelatedContentRowPadding">
+                        <a class="RelatedContentBoldText" href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/9472/94720O/An-adaptive-locally-linear-embedding-manifold-learning-approach-for-hyperspectral/10.1117/12.2177466.full" title="An adaptive locally linear embedding manifold learning approach for hyperspectral target detection">An adaptive locally linear embedding manifold learning approach for hyperspectral...</a>
+
+                            <br>
+                        <span class="RelatedContentText">Proceedings of SPIE (May 21 2015)</span>
+                </div>
+                <div class="RelatedContentRowPadding">
+                        <a class="RelatedContentBoldText" href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/5574/0000/Segment-based-classification-algorithm-For-multisensor-image-data/10.1117/12.567943.full" title="Segment-based classification algorithm For multisensor image data">Segment-based classification algorithm For multisensor image data</a>
+
+                            <br>
+                        <span class="RelatedContentText">Proceedings of SPIE (October 22 2004)</span>
+                </div>
+                <div class="RelatedContentRowPadding">
+                        <a class="RelatedContentBoldText" href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/9159/91590W/Organoleptic-damage-classification-of-potatoes-with-the-use-of-image/10.1117/12.2064243.full" title="Organoleptic damage classification of potatoes with the use of image analysis in production process">Organoleptic damage classification of potatoes with the use of image...</a>
+
+                            <br>
+                        <span class="RelatedContentText">Proceedings of SPIE (April 16 2014)</span>
+                </div>
+                <div class="RelatedContentRowPadding">
+                        <a class="RelatedContentBoldText" href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/6233/62330I/Classification-of-hyperspectral-spatial-spectral-patterns-using-Gauss-Markov-random/10.1117/12.666041.full" title="Classification of hyperspectral spatial/spectral patterns using Gauss-Markov random fields">Classification of hyperspectral spatial spectral patterns using Gauss Markov random...</a>
+
+                            <br>
+                        <span class="RelatedContentText">Proceedings of SPIE (May 04 2006)</span>
+                </div>
+                <div class="RelatedContentRowPadding">
+                        <a class="RelatedContentBoldText" href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/8048/80481K/Interactive-visualization-of-hyperspectral-images-on-a-hyperbolic-disk/10.1117/12.886927.full" title="Interactive visualization of hyperspectral images on a hyperbolic disk">Interactive visualization of hyperspectral images on a hyperbolic disk</a>
+
+                            <br>
+                        <span class="RelatedContentText">Proceedings of SPIE (May 20 2011)</span>
+                </div>
+                <div class="RelatedContentRowPadding">
+                        <a class="RelatedContentBoldText" href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/4885/0000/Classification-of-hyperspectral-imagery-using-limited-training-data-samples/10.1117/12.463175.full" title="Classification of hyperspectral imagery using limited training data samples">Classification of hyperspectral imagery using limited training data samples</a>
+
+                            <br>
+                        <span class="RelatedContentText">Proceedings of SPIE (March 13 2003)</span>
+                </div>
+        </div>
+        <div class="row">
+            <div class="RelatedContentline" style="margin:40px auto;"><hr></div>
+        </div>
+    </div>
+
+
+                    </div>
+
+                    <div class="PAHSpace" id="alerts">
+
+<div class="panel panel-default SPIEPanel">
+    <div class="panel-body" style="">
+        <div class="row" style="">
+                    <div class="col-lg-10 PAHSidebar" style="padding:0;">
+                        <a href="https://www.spiedigitallibrary.org/subscribe-page" class="">
+                            <img src="./Classification of hyperspectral images based on conditional random fields_files/Subscribe_Check.png">
+                            <text class="ProceedingsArticleMenuAnchorText">Subscribe to Digital Library</text>
+                        </a>
+                    </div>
+                    <div class="col-lg-10 PAHSidebar" style="padding:0;">
+                        <a href="https://www.spiedigitallibrary.org/" class="" onclick="javascript:return ShowEratumAlertDialog(&#39;10.1117/12.2083374&#39;, &#39;presentation&#39;); ;">
+                            <img src="./Classification of hyperspectral images based on conditional random fields_files/Alerts_Mark.png">
+                            <text class="ProceedingsArticleMenuAnchorText">Receive Proceedings Email Alerts</text>
+                        </a>
+                    </div>
+        </div>
+        <div class="row" style="text-align:center;">
+        </div>
+
+       
+    </div>
+</div>
+
+<script>
+    function Print() {
+        window.print();
+        return false;
+    }
+</script>
+
+
+
+<div id="divPopupEratumAlert" class="panel panel-default divPopup" style="display: none;background-color:#ffffff;padding-top:0px;">
+    <div class="panel-body">
+        <form action="https://www.spiedigitallibrary.org/search/SaveErratumAlert" method="post">
+            <div class="row ErratumAlertRowPadding">
+                <text class="ErratumAlertText">
+                    Erratum Email Alerts notify you when an article has been updated or the paper is withdrawn.
+                </text>
+            </div>
+            <div class="row ErratumAlertRowPadding">
+                <span class="ErratumAlertText">
+                    Visit <a href="https://www.spiedigitallibrary.org/account/email-alerts">My Account</a> to manage your email alerts.
+                </span>
+            </div>
+            <div class="row ErratumAlertRowPadding">
+                <input type="hidden" name="PaperId" id="ErratumPaperId">
+                <input type="hidden" name="PaperType" id="ErratumPaperType">
+                <button type="submit" id="saveAlert" class="ErratumAlertButton center-block">
+                    SAVE ALERT
+                </button>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+<script language="javascript" type="text/javascript">
+
+    function ShowEratumAlertDialog(doi, type) {
+        $('.ui-dialog-content').dialog('close');
+        $("#ErratumPaperId").val(doi);
+        $("#ErratumPaperType").val(type);
+        $("#divPopupEratumAlert").dialog(
+                        {
+                            width: 360,
+                            height: 325,
+                            modal: true,
+                            resizable: false,
+                            draggable: false,
+                            closeOnEscape:true,
+                            zIndex: 999,
+                            title: 'ERRATUM ALERT'
+                        }
+        );
+
+        return false;
+    }
+
+</script>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row ">
+<div id="divPopupDownloadCitation" class="panel panel-default divPopup" style="display: none;background-color:#ffffff !important;padding-top:0px;">
+    <div class="panel-body" style="background-color:#ffffff;">
+        Yang  Hu, Eli  Saber, Sildomar  Monteiro, Nathan D. Cahill, David W. Messinger, "Classification of hyperspectral images based on conditional random fields," Proc. SPIE 9405, Image Processing: Machine Vision Applications VIII, 940510 (27 February 2015);
+        <div class="row DownloadCitationRowPadding">
+            
+                <div class="col-lg-6">
+                    <div classs="row DownloadCitationRowPadding">
+                        <text class="DownloadCitationBoldText">Include:</text>
+                    </div>
+                    <div classs="row DownloadCitationRowPadding">
+
+                            <div class="radio DownloadCitationcheckBoxRowPadding">                                                               
+                                <input name="contentType" data-selected="0" id="downloadCitationCheckbox1-1" type="radio" class="DownloadCitationCheckBox" checked="checked"> <label for="downloadCitationCheckbox1-1"><span class="displayCheckbox"></span>Citation Only</label>
+                            </div>
+                            <div class="radio DownloadCitationcheckBoxRowPadding">                                                               
+                                <input name="contentType" data-selected="1" id="downloadCitationCheckbox1-2" type="radio" class="DownloadCitationCheckBox"> <label for="downloadCitationCheckbox1-2"><span class="displayCheckbox"></span>Citation &amp; Abstract</label>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div classs="row DownloadCitationRowPadding">
+                        <text class="DownloadCitationBoldText">Format:</text>
+                    </div>
+                    <div classs="row DownloadCitationRowPadding">
+
+                            <div class="radio DownloadCitationcheckBoxRowPadding">                                                               
+                                <input name="formatType" data-selected="0" id="downloadCitationCheckbox2-1" type="radio" class="DownloadCitationCheckBox" checked="checked"> <label for="downloadCitationCheckbox2-1"><span class="displayCheckbox"></span>RIS (Zotero)</label>
+                            </div>
+                            <div class="radio DownloadCitationcheckBoxRowPadding">                                                               
+                                <input name="formatType" data-selected="1" id="downloadCitationCheckbox2-2" type="radio" class="DownloadCitationCheckBox"> <label for="downloadCitationCheckbox2-2"><span class="displayCheckbox"></span>EndNote</label>
+                            </div>
+                            <div class="radio DownloadCitationcheckBoxRowPadding">                                                               
+                                <input name="formatType" data-selected="2" id="downloadCitationCheckbox2-3" type="radio" class="DownloadCitationCheckBox"> <label for="downloadCitationCheckbox2-3"><span class="displayCheckbox"></span>BibTex</label>
+                            </div>
+                            <div class="radio DownloadCitationcheckBoxRowPadding">                                                               
+                                <input name="formatType" data-selected="3" id="downloadCitationCheckbox2-4" type="radio" class="DownloadCitationCheckBox"> <label for="downloadCitationCheckbox2-4"><span class="displayCheckbox"></span>Medlars</label>
+                            </div>
+                            <div class="radio DownloadCitationcheckBoxRowPadding">                                                               
+                                <input name="formatType" data-selected="4" id="downloadCitationCheckbox2-5" type="radio" class="DownloadCitationCheckBox"> <label for="downloadCitationCheckbox2-5"><span class="displayCheckbox"></span>PorCite</label>
+                            </div>
+                            <div class="radio DownloadCitationcheckBoxRowPadding">                                                               
+                                <input name="formatType" data-selected="5" id="downloadCitationCheckbox2-6" type="radio" class="DownloadCitationCheckBox"> <label for="downloadCitationCheckbox2-6"><span class="displayCheckbox"></span>Ref Works</label>
+                            </div>
+                            <div class="radio DownloadCitationcheckBoxRowPadding">                                                               
+                                <input name="formatType" data-selected="6" id="downloadCitationCheckbox2-7" type="radio" class="DownloadCitationCheckBox"> <label for="downloadCitationCheckbox2-7"><span class="displayCheckbox"></span>Reference Manager</label>
+                            </div>
+                    </div>
+                </div>
+        </div>
+        <div class="row DownloadCitationHorizontalLine center-block"></div>
+        <div class="row DownloadCitationRowPadding DownloadCitationHorizontalRowPadding">
+            <button type="button" id="downloadCitation" class="DownloadCitationButton center-block">
+                DOWNLOAD CITATION
+            </button>         
+        </div>
+    </div>
+</div>
+
+<style>
+    .screenReaderText {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+</style>
+<script language="javascript" type="text/javascript">
+
+    $(document).ready(function () {       
+
+        $("#downloadCitation").click(function (elem) {
+                    console.log("clicked download citation");
+
+                    var contentTypeInput = $('input[name=contentType]:checked');
+                    var selectedContentType = contentTypeInput.attr("data-selected");
+
+                    var formatTypeInput = $('input[name=formatType]:checked');
+                    var selectedFormatType = formatTypeInput.attr("data-selected");
+
+                    var obj = {
+                                contentType: selectedContentType,
+                                formatType: selectedFormatType,
+                                referenceType: 'conference'
+                            };
+
+
+            $.ajax({
+                    type: "POST",
+                    url: "/citation/download",
+                    data: JSON.stringify(obj),
+                    contentType: "application/json; charset=utf-8",                                
+                    traditional: true,
+
+                    success: function (response) {
+                            //console.log("success, filename: " + response);                        
+                            //window.location.assign("citation/download/" + response);
+
+                            var downloadUrl = "citation/download/" + response;
+                            var downloadFrame = document.createElement("iframe");
+                            downloadFrame.setAttribute('src', downloadUrl);
+                            downloadFrame.setAttribute('class', "screenReaderText");
+                            document.body.appendChild(downloadFrame); 
+
+                        },
+                    failure: function (response) {
+                            console.log("fail, filename: " + response);
+                        },
+                    error: function (response) {
+                            console.log("error, filename: " + response);
+                        }
+                    });
+
+        });
+    });
+    function ShowDownloadCitationDialog() {
+        $('.divPopup').hide();
+       //var  x = $(this).position().left - (document.scrollLeft);
+       //var  y = $(this).position().top - (document.scrollTop);
+        $("#divPopupDownloadCitation").dialog(
+                        {
+                            width: 420,
+                            //height: 500,
+                            modal: true,
+                            resizable: false,
+                            draggable: false,
+                            closeOnEscape:true,
+                            zIndex: 999,
+                            title: 'DOWNLOAD CITATION:',
+
+                        }
+        );
+        return false;
+    }
+
+</script>
+
+        </div>
+    </div>
+</div>
+
+
+<script>
+    // Adjust column bar length
+    // TODO: Needs shortening for when mainArticle is longer
+    var rightRail = document.getElementById('rightRail');
+    var rightHeight = rightRail.offsetHeight;
+    var offset = document.getElementById('mainArticle').offsetTop;
+    var leftHeight = document.getElementById('mainArticle').offsetHeight;
+
+    // Adjust when right rail is longer than main content
+    if (leftHeight < rightHeight) {
+        $('.PAHArticleCol')[0].style.height = rightHeight - offset + "px";
+    }
+    // if (leftHeight > rightHeight) {}
+    if (window.location.hash) {
+        var elem = $('[data-action="' + window.location.hash.replace("#", "") + '"]');
+        if (elem.length > 0) {
+            elem.click();
+        }
+    }
+</script>
+
+
+    </div>
+</main>
+
+
+
+
+            <div id="modal-container" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-content">
+                </div>
+            </div>
+            
+            <a class="top-button" href="https://www.spiedigitallibrary.org/#top" style="bottom: 245px; position: fixed; display: none;">
+                <img src="./Classification of hyperspectral images based on conditional random fields_files/BackToTop.png" alt="Back to Top">
+            </a>
+        </div>
+	<footer>
+		<div class="container hidden-print">
+			<div class="col">
+				<h5>Site Map</h5>
+					<ul>
+    <li>    <a href="https://www.spiedigitallibrary.org/" title="Home">
+        Home</a>
+</li>
+    <li>    <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie" title="Conference Papers">
+        Conference Papers</a>
+</li>
+    <li>    <a href="https://www.spiedigitallibrary.org/conference-presentations" title="Conference Presentations">
+        Conference Presentations</a>
+</li>
+    <li>    <a href="https://www.spiedigitallibrary.org/journals" title="Journals">
+        Journals</a>
+</li>
+    <li>    <a href="https://www.spiedigitallibrary.org/ebooks" title="eBooks">
+        eBooks</a>
+</li>
+    <li>    <a href="https://www.spiedigitallibrary.org/about-the-dl" title="About">
+        About</a>
+</li>
+    <li>    <a href="https://www.spiedigitallibrary.org/subscribe-page" title="Subscriptions">
+        Subscriptions</a>
+</li>
+    <li>    <a href="https://www.spiedigitallibrary.org/new-features" title="New Features">
+        New Features</a>
+</li>
+					</ul>
+			</div>
+			<div class="col">
+				<h5>Information for Authors</h5>
+					<ul>
+    <li>    <a href="https://www.spiedigitallibrary.org/proceedings-authors" title="Proceedings Authors">
+        Proceedings Authors</a>
+</li>
+    <li>    <a href="https://www.spiedigitallibrary.org/journals/journal-authors" title="Journal Authors">
+        Journal Authors</a>
+</li>
+    <li>    <a href="https://www.spiedigitallibrary.org/ebook-authors" title="eBook Authors">
+        eBook Authors</a>
+</li>
+					</ul>
+			</div>
+			<div class="col">
+				<h5>Information for Reviewers</h5>
+					<ul>
+    <li>    <a href="https://www.spiedigitallibrary.org/journals/reviewer-information" title="Reviewer Guidelines">
+        Reviewer Guidelines</a>
+</li>
+					</ul>
+				<div style="height: 16px"></div>
+				<h5>Information for Librarians</h5>
+					<ul>
+    <li>    <a href="https://www.spiedigitallibrary.org/librarian-resources" title="Resources">
+        Resources</a>
+</li>
+    <li>    <a href="https://www.spiedigitallibrary.org/subscribe-page" title="Subscriptions">
+        Subscriptions</a>
+</li>
+    <li>    <a href="https://www.spiedigitallibrary.org/dl-launch-for-librarians" title="Launch Information">
+        Launch Information</a>
+</li>
+					</ul>
+			</div>
+			<div class="col">
+				<h5>Contact &amp; Support</h5>
+					<p style="text-align: left;">+1 888 902 0894<br>(United States)<br><br>+1 360 685 5580<br>(International)</p>
+<p style="text-align: left;">Hours:<br>8:00 am to 5:00 pm PST</p>
+<p style="text-align: left;"><a href="https://www.spiedigitallibrary.org/help">Help</a>&nbsp;|&nbsp;<a href="https://www.spiedigitallibrary.org/contact-us">Contact Us</a></p>
+			</div>
+
+                
+            
+			
+				<div class="col social">
+
+                    <h5>Connect</h5>
+					
+    <a href="https://www.facebook.com/SPIE.org/">    <img src="./Classification of hyperspectral images based on conditional random fields_files/Facebook_Footer.png" alt="">
+</a>
+    <a href="https://twitter.com/SPIEtweets">    <img src="./Classification of hyperspectral images based on conditional random fields_files/Twitter_Footer.png" alt="">
+</a>
+    <a href="https://www.linkedin.com/groups/106965/profile">    <img src="./Classification of hyperspectral images based on conditional random fields_files/LinkedIn_Footer.png" alt="">
+</a>
+				</div>
+			<hr>
+			<div class="sub">
+				<div class="logo">
+					<a href="https://www.spiedigitallibrary.org/">
+						    <img src="./Classification of hyperspectral images based on conditional random fields_files/SPIE_Logo_Footer.png" alt="">
+</a>
+				</div>
+					<div class="links">
+    <a href="https://www.spiedigitallibrary.org/privacy-policy" title="Privacy Policy">
+        Privacy Policy</a>
+								<span class="pipe">|</span>
+    <a href="https://www.spiedigitallibrary.org/terms-of-use" title="Terms of Use">
+        Terms of Use</a>
+					</div>
+									<div class="copyright">
+						COPYRIGHT © 2017 SPIE
+					</div>
+			</div>
+		</div>
+	</footer>
+    <nav id="fixed" style="display:none;" class="show">
+        
+    <div class="bottom" id="fixedBottom">
+        
+    <div class="container hidden-print">
+        <div class="logoContainer">
+            <a href="https://www.spiedigitallibrary.org/#">
+                    <img src="./Classification of hyperspectral images based on conditional random fields_files/Float_Nav_SPIE_Logo.png" alt="" class="logo">
+
+            </a>
+        </div>
+
+                <div style="display:inline-block;">
+                <div class="navigationGroupNameFloater GothamNarrowMedium">
+                    CONFERENCE PROCEEDINGS
+                </div>
+            <ul class="hidden-print" style="margin:0px;">
+    <li class="on">
+    <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie" title="Conference Proceedings of SPIE">
+        Papers</a>
+
+    </li>
+
+    <li>
+    <a href="https://www.spiedigitallibrary.org/conference-presentations" title="Videos">
+        Presentations</a>
+
+    </li>
+
+            </ul>
+        </div>
+        <div style="display:inline-block;">
+            <ul class="hidden-print" style="margin:0px;">
+    <li>
+    <a href="https://www.spiedigitallibrary.org/journals" title="Journals">
+        Journals<span class="whitedownarrow"></span></a>
+                <ul>
+    <li>
+
+    </li>
+
+    <li>
+    <a href="https://www.spiedigitallibrary.org/journals/journal-of-applied-remote-sensing" title="Journal of Applied Remote Sensing">
+        Journal of Applied Remote Sensing</a>
+
+    </li>
+
+    <li>
+    <a href="https://www.spiedigitallibrary.org/journals/journal-of-astronomical-telescopes-instruments-and-systems" title="Journal of Astronomical Telescopes, Instruments, and Systems">
+        Journal of Astronomical Telescopes, Instruments, and Systems</a>
+
+    </li>
+
+    <li>
+    <a href="https://www.spiedigitallibrary.org/journals/journal-of-biomedical-optics" title="Journal of Biomedical Optics">
+        Journal of Biomedical Optics</a>
+
+    </li>
+
+    <li>
+    <a href="https://www.spiedigitallibrary.org/journals/journal-of-electronic-imaging" title="Journal of Electronic Imaging">
+        Journal of Electronic Imaging</a>
+
+    </li>
+
+    <li>
+    <a href="https://www.spiedigitallibrary.org/journals/journal-of-medical-imaging" title="Journal of Medical Imaging">
+        Journal of Medical Imaging</a>
+
+    </li>
+
+    <li>
+    <a href="https://www.spiedigitallibrary.org/journals/journal-of-micro-nanolithography-mems-and-moems" title="Journal of Micro-Nanolithography, MEMS, and MOEMS">
+        Journal of Micro-Nanolithography, MEMS, and MOEMS</a>
+
+    </li>
+
+    <li>
+    <a href="https://www.spiedigitallibrary.org/journals/journal-of-nanophotonics" title="Journal of Nanophotonics">
+        Journal of Nanophotonics</a>
+
+    </li>
+
+    <li>
+    <a href="https://www.spiedigitallibrary.org/journals/journal-of-photonics-for-energy" title="Journal of Photonics for Energy">
+        Journal of Photonics for Energy</a>
+
+    </li>
+
+    <li>
+    <a href="https://www.spiedigitallibrary.org/journals/neurophotonics" title="Neurophotonics">
+        Neurophotonics</a>
+
+    </li>
+
+    <li>
+    <a href="https://www.spiedigitallibrary.org/journals/optical-engineering" title="Optical Engineering">
+        Optical Engineering</a>
+
+    </li>
+
+                </ul>
+
+    </li>
+
+    <li>
+    <a href="https://www.spiedigitallibrary.org/ebooks" title="eBooks">
+        Ebooks</a>
+
+    </li>
+
+            </ul>
+        </div>
+
+        
+        
+        <form action="https://www.spiedigitallibrary.org/search" class="search" onsubmit="return FilterSearchTerm(&#39;fixedFooterSearchTerm&#39;)">
+            <div style="width:196px;position:absolute;right:0;top: -24px;" class="GothamNarrowMedium">
+                <a class="defaultUnderline" style="margin-right:15px;" href="https://www.spiedigitallibrary.org/help">Help</a> |
+                <a class="advanced" onclick="ShowAdvancedSearchModal()" style="cursor:pointer;margin-left:15px;"><span class="defaultUnderline">Advanced Search</span> &gt;</a>
+            </div>
+            
+            <div class="icon-wrap">
+                <input type="text" name="term" id="fixedFooterSearchTerm" class="searchTermTextbox ui-autocomplete-input" placeholder="Search" autocomplete="off">
+                <input type="text" name="term" id="fixedFooterSearchTermGray" class="searchTermTextboxGray" disabled="" autocomplete="off">
+            </div>
+            <input type="submit" value="">
+        </form>
+        
+    </div>
+    <span class="close fixedFooterClose" style="display: inline;"><img src="./Classification of hyperspectral images based on conditional random fields_files/cross.png"></span>
+</div>
+
+
+<div id="navbarWrapper"></div></nav>
+    </div><div id="_atssh" style="visibility: hidden; height: 1px; width: 1px; position: absolute; top: -9999px; z-index: 100000;"><iframe id="_atssh785" title="AddThis utility frame" style="height: 1px; width: 1px; position: absolute; top: 0px; z-index: 100000; border: 0px; left: 0px;" src="./Classification of hyperspectral images based on conditional random fields_files/sh.c7f897d92405181bbe1705e3.html"></iframe></div><style id="service-icons-0"></style>
+<div id="divModalAdvSearchForm" style="display: none; margin:9px; font-size:13px">
+    <h2>KEYWORDS/PHRASES</h2>
+    <div id="advSearchFindFields" class="advSearchContainer">
+                <div id="advSearchFindFieldContainer0" class="advSearchFindFieldContainer">
+                        <div class="advSearchKeywordLabel">Keywords</div>
+                    <div style="position:relative; display:inline-block; width:450px; vertical-align:top">
+                        <input id="advSearchText0" class="advSearchKeywordTextbox searchTermTextbox ui-autocomplete-input" type="text" placeholder="Enter Keywords / Phrases / Author Name / Publication Title" autocomplete="off">
+                        <input type="text" name="term" id="advSearchText0Gray" class="advSearchKeywordTextbox searchTermTextboxGray" disabled="" autocomplete="off">
+                    </div>
+                    <div class="advSearchFieldInLabel">in</div>
+                    <select id="advSearchField0" class="advSearchFieldSelect">
+                        <option value="ALL" selected="">All Fields</option>
+                        <option value="ABSTRACT">Abstract</option>
+                        <option value="AUTHORNAME">Author Name</option>
+                        <option value="AFFILIATION">Affiliation</option>
+                        <option value="KEYWORDS">Keywords</option>
+                        <option value="TITLE">Title</option>
+                        <option value="VOLUMETITLE">Volume Title</option>
+                    </select>
+                    
+                    <div class="inlineLink" onclick="RemoveAdvSearchField(0)">Remove</div>
+                </div>
+                <div id="advSearchFindFieldContainer1" class="advSearchFindFieldContainer">
+                        <select id="advSearchLogic1" class="advSearchLogic">
+                            <option value="AND" selected="">AND</option>
+                            <option value="OR">OR</option>
+                            <option value="NOT">NOT</option>
+                        </select>
+                    <div style="position:relative; display:inline-block; width:450px; vertical-align:top">
+                        <input id="advSearchText1" class="advSearchKeywordTextbox searchTermTextbox ui-autocomplete-input" type="text" placeholder="Enter Keywords / Phrases / Author Name / Publication Title" autocomplete="off">
+                        <input type="text" name="term" id="advSearchText1Gray" class="advSearchKeywordTextbox searchTermTextboxGray" disabled="" autocomplete="off">
+                    </div>
+                    <div class="advSearchFieldInLabel">in</div>
+                    <select id="advSearchField1" class="advSearchFieldSelect">
+                        <option value="ALL" selected="">All Fields</option>
+                        <option value="ABSTRACT">Abstract</option>
+                        <option value="AUTHORNAME">Author Name</option>
+                        <option value="AFFILIATION">Affiliation</option>
+                        <option value="KEYWORDS">Keywords</option>
+                        <option value="TITLE">Title</option>
+                        <option value="VOLUMETITLE">Volume Title</option>
+                    </select>
+                    
+                    <div class="inlineLink" onclick="RemoveAdvSearchField(1)">Remove</div>
+                </div>
+                <div id="advSearchFindFieldContainer2" class="advSearchFindFieldContainer">
+                        <select id="advSearchLogic2" class="advSearchLogic">
+                            <option value="AND" selected="">AND</option>
+                            <option value="OR">OR</option>
+                            <option value="NOT">NOT</option>
+                        </select>
+                    <div style="position:relative; display:inline-block; width:450px; vertical-align:top">
+                        <input id="advSearchText2" class="advSearchKeywordTextbox searchTermTextbox ui-autocomplete-input" type="text" placeholder="Enter Keywords / Phrases / Author Name / Publication Title" autocomplete="off">
+                        <input type="text" name="term" id="advSearchText2Gray" class="advSearchKeywordTextbox searchTermTextboxGray" disabled="" autocomplete="off">
+                    </div>
+                    <div class="advSearchFieldInLabel">in</div>
+                    <select id="advSearchField2" class="advSearchFieldSelect">
+                        <option value="ALL" selected="">All Fields</option>
+                        <option value="ABSTRACT">Abstract</option>
+                        <option value="AUTHORNAME">Author Name</option>
+                        <option value="AFFILIATION">Affiliation</option>
+                        <option value="KEYWORDS">Keywords</option>
+                        <option value="TITLE">Title</option>
+                        <option value="VOLUMETITLE">Volume Title</option>
+                    </select>
+                    
+                    <div class="inlineLink" onclick="RemoveAdvSearchField(2)">Remove</div>
+                </div>
+            <script>
+                $(document).ready(function () {
+                        
+                        $("#advSearchText0").autocomplete({
+                            source: function (request, callback) {
+                                $("#advSearchText0Gray").val("");
+                                SearchTermAutoCompleteSource(request, callback);
+                            },
+                            focus: function (event, ui) {
+                                $("#advSearchText0Gray").val(ui.item.value);
+                                return false;
+                            },
+                            select: function (event, ui) {
+                                $(this).val(ui.item.value);
+                            }
+                        }).autocomplete("widget").addClass("searchTermAutoComplete");
+                        
+                        
+                        $("#advSearchText1").autocomplete({
+                            source: function (request, callback) {
+                                $("#advSearchText1Gray").val("");
+                                SearchTermAutoCompleteSource(request, callback);
+                            },
+                            focus: function (event, ui) {
+                                $("#advSearchText1Gray").val(ui.item.value);
+                                return false;
+                            },
+                            select: function (event, ui) {
+                                $(this).val(ui.item.value);
+                            }
+                        }).autocomplete("widget").addClass("searchTermAutoComplete");
+                        
+                        
+                        $("#advSearchText2").autocomplete({
+                            source: function (request, callback) {
+                                $("#advSearchText2Gray").val("");
+                                SearchTermAutoCompleteSource(request, callback);
+                            },
+                            focus: function (event, ui) {
+                                $("#advSearchText2Gray").val(ui.item.value);
+                                return false;
+                            },
+                            select: function (event, ui) {
+                                $(this).val(ui.item.value);
+                            }
+                        }).autocomplete("widget").addClass("searchTermAutoComplete");
+                        
+                });
+            </script>
+
+    </div>
+    <div id="advSearchAddField" class="inlineLink" onclick="AddAdvSearchField()">+ Add another field</div>
+    <hr>
+    <h2>SEARCH IN:</h2>
+    <div id="SearchInAdvSearchContainer" class="advSearchContainer">
+        <div id="advSearchContainerProceedings_Article" style="margin-bottom:12px">
+            <div style="width:160px;display:inline-block">
+                <input type="checkbox" id="advSearchProceedings_Article" class="advSearchPubType" value="Proceedings_Article">
+                <label for="advSearchProceedings_Article"><span class="displayCheckbox"></span>Proceedings</label>
+            </div>
+            <div class="advSearchNumberFilterContainer">
+                <label for="advSearchProceedingsVolume">Volume</label>
+                <input id="advSearchProceedingsVolume" class="pubFacetTextbox" type="text" placeholder="All" maxlength="5" onchange="$(&#39;#advSearchProceedings_Article&#39;).prop(&#39;checked&#39;, true).change()">
+            </div>
+            
+            
+        </div>
+        
+        <div id="advSearchContainerJournal_Article" style="margin-bottom:12px">
+            <div>
+                <div style="width:160px;display:inline-block">
+                    <input type="checkbox" id="advSearchJournal_Article" class="advSearchPubType" value="Journal_Article">
+                    <label for="advSearchJournal_Article"><span class="displayCheckbox"></span>Journals +</label>
+                </div>
+                <div class="advSearchNumberFilterContainer">
+                    <label for="advSearchJournalVolume">Volume</label>
+                    <input id="advSearchJournalVolume" class="pubFacetTextbox" type="text" placeholder="All" maxlength="5" onchange="$(&#39;#advSearchJournal_Article&#39;).prop(&#39;checked&#39;, true).change()">
+                </div>
+                <div class="advSearchNumberFilterContainer">
+                    <label for="advSearchJournalIssue">Issue</label>
+                    <input id="advSearchJournalIssue" class="pubFacetTextbox" type="text" placeholder="All" maxlength="3" onchange="$(&#39;#advSearchJournal_Article&#39;).prop(&#39;checked&#39;, true).change()">
+                </div>
+                <div class="advSearchNumberFilterContainer">
+                    <label for="advSearchJournalPage">Page</label>
+                    <input id="advSearchJournalPage" class="pubFacetTextbox" type="text" placeholder="All" maxlength="3" onchange="$(&#39;#advSearchJournal_Article&#39;).prop(&#39;checked&#39;, true).change()">
+                </div>
+            </div>
+            <div id="advSearchSubTypeContainerJournal_Article" class="advSearchSubTypeContainer">
+                        <input type="checkbox" id="advSearchJournal_Journal_of_Applied_Remote_Sensing" class="advSearchJournal_Article" value="Journal_of_Applied_Remote_Sensing">
+                        <label for="advSearchJournal_Journal_of_Applied_Remote_Sensing"><span class="displayCheckbox"></span>Journal of Applied Remote Sensing</label><br>
+                        <input type="checkbox" id="advSearchJournal_Journal_of_Astronomical_Telescopes__Instruments__and_Systems" class="advSearchJournal_Article" value="Journal_of_Astronomical_Telescopes__Instruments__and_Systems">
+                        <label for="advSearchJournal_Journal_of_Astronomical_Telescopes__Instruments__and_Systems"><span class="displayCheckbox"></span>Journal of Astronomical Telescopes  Instruments  and Systems</label><br>
+                        <input type="checkbox" id="advSearchJournal_Journal_of_Biomedical_Optics" class="advSearchJournal_Article" value="Journal_of_Biomedical_Optics">
+                        <label for="advSearchJournal_Journal_of_Biomedical_Optics"><span class="displayCheckbox"></span>Journal of Biomedical Optics</label><br>
+                        <input type="checkbox" id="advSearchJournal_Journal_of_Electronic_Imaging" class="advSearchJournal_Article" value="Journal_of_Electronic_Imaging">
+                        <label for="advSearchJournal_Journal_of_Electronic_Imaging"><span class="displayCheckbox"></span>Journal of Electronic Imaging</label><br>
+                        <input type="checkbox" id="advSearchJournal_Journal_of_Medical_Imaging" class="advSearchJournal_Article" value="Journal_of_Medical_Imaging">
+                        <label for="advSearchJournal_Journal_of_Medical_Imaging"><span class="displayCheckbox"></span>Journal of Medical Imaging</label><br>
+                        <input type="checkbox" id="advSearchJournal_Journal_of_Micro/Nanolithography,_MEMS,_and_MOEMS" class="advSearchJournal_Article" value="Journal_of_Micro/Nanolithography,_MEMS,_and_MOEMS">
+                        <label for="advSearchJournal_Journal_of_Micro/Nanolithography,_MEMS,_and_MOEMS"><span class="displayCheckbox"></span>Journal of Micro/Nanolithography, MEMS, and MOEMS</label><br>
+                        <input type="checkbox" id="advSearchJournal_Journal_of_Nanophotonics" class="advSearchJournal_Article" value="Journal_of_Nanophotonics">
+                        <label for="advSearchJournal_Journal_of_Nanophotonics"><span class="displayCheckbox"></span>Journal of Nanophotonics</label><br>
+                        <input type="checkbox" id="advSearchJournal_Journal_of_Photonics_for_Energy" class="advSearchJournal_Article" value="Journal_of_Photonics_for_Energy">
+                        <label for="advSearchJournal_Journal_of_Photonics_for_Energy"><span class="displayCheckbox"></span>Journal of Photonics for Energy</label><br>
+                        <input type="checkbox" id="advSearchJournal_Neurophotonics" class="advSearchJournal_Article" value="Neurophotonics">
+                        <label for="advSearchJournal_Neurophotonics"><span class="displayCheckbox"></span>Neurophotonics</label><br>
+                        <input type="checkbox" id="advSearchJournal_Optical_Engineering" class="advSearchJournal_Article" value="Optical_Engineering">
+                        <label for="advSearchJournal_Optical_Engineering"><span class="displayCheckbox"></span>Optical Engineering</label><br>
+                        <input type="checkbox" id="advSearchJournal_SPIE_Reviews" class="advSearchJournal_Article" value="SPIE_Reviews">
+                        <label for="advSearchJournal_SPIE_Reviews"><span class="displayCheckbox"></span>SPIE Reviews</label><br>
+
+            </div>
+        </div>
+        <div>
+            <input type="checkbox" id="advSearcheBook" class="advSearchPubType" value="eBook">
+            <label for="advSearcheBook"><span class="displayCheckbox"></span>eBooks +</label>
+        </div>
+        <div id="advSearchSubTypeContainereBook" class="advSearchSubTypeContainer">
+                    <input type="checkbox" id="advSearcheBook_Field_Guide_Series" class="advSearcheBook" value="Field_Guide_Series">
+                    <label for="advSearcheBook_Field_Guide_Series"><span class="displayCheckbox"></span>Field Guide Series</label><br>
+                    <input type="checkbox" id="advSearcheBook_Press_Monograph" class="advSearcheBook" value="Press_Monograph">
+                    <label for="advSearcheBook_Press_Monograph"><span class="displayCheckbox"></span>Press Monograph</label><br>
+                    <input type="checkbox" id="advSearcheBook_Spotlight" class="advSearcheBook" value="Spotlight">
+                    <label for="advSearcheBook_Spotlight"><span class="displayCheckbox"></span>Spotlight</label><br>
+                    <input type="checkbox" id="advSearcheBook_Tutorial_Text" class="advSearcheBook" value="Tutorial_Text">
+                    <label for="advSearcheBook_Tutorial_Text"><span class="displayCheckbox"></span>Tutorial Text</label><br>
+                    <input type="checkbox" id="advSearcheBook_Other_Press" class="advSearcheBook" value="Other_Press">
+                    <label for="advSearcheBook_Other_Press"><span class="displayCheckbox"></span>Other Press</label><br>
+
+        </div>
+    </div>
+    <hr>
+    <h2>PUBLICATION YEARS</h2>
+    <div class="advSearchContainer">
+        <div style="width:189px;display:inline-block;vertical-align:top">
+            <div class="facetSubTitle">Range</div>
+            <div id="advSearchYearSlider" class="yearSlider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 0%; width: 100%;"></div><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 0%; text-align: center; line-height: 15px; background-color: rgb(255, 241, 0); color: rgb(0, 0, 0);">&lt;</span><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 100%; text-align: center; line-height: 15px; background-color: rgb(255, 241, 0); color: rgb(0, 0, 0);">&gt;</span></div>
+            <input id="advSearchYearSliderStart" class="facetYearTextbox" type="text" onfocus="this.placeholder = &#39;&#39;" onblur="this.placeholder=&#39;YYYY&#39;" placeholder="1962" maxlength="4" style="float:left" onchange="ChangeAdvSearchYearRangeTextbox(&#39;Start&#39;)">
+            <input id="advSearchYearSliderEnd" class="facetYearTextbox" type="text" onfocus="this.placeholder = &#39;&#39;" onblur="this.placeholder=&#39;YYYY&#39;" placeholder="2017" maxlength="4" style="float:right" onchange="ChangeAdvSearchYearRangeTextbox(&#39;End&#39;)">
+            <div style="clear:both"></div>
+        </div>
+        <div style="display:inline-block;vertical-align:top;margin-left:84px">
+            <div class="facetSubTitle">Single Year</div>
+            <input id="advSearchSingleYear" type="text" class="facetYearTextbox" placeholder="YYYY" maxlength="4" onchange="ChangeAdvSearchSingleYear()">
+        </div>
+    </div>
+    <hr>
+    <div style="text-align:right">
+        <div class="inlineLink" style="margin-right:35px" onclick="ClearAdvSearch()">Clear Form</div>
+        <input class="searchYellow loadMoreButton" type="button" value="SEARCH" onclick="SubmitAdvSearch()" style="display: inline-block;">
+    </div>
+</div>
+
+    <!-- START OF SmartSource Data Collector TAG v10.4.1 -->
+    <!-- Copyright (c) 2014 Webtrends Inc.  All rights reserved. -->
+    <script>
+        window.webtrendsAsyncInit=function(){
+            var dcs=new Webtrends.dcs().init({
+      	        dcsid:"dcsrefwbsblq1tcdick7hwcm6_7v5d",
+		        domain:"datacoll.spie.org",
+		        timezone:-8,
+		        offsite:true,
+                download:true,
+		        fpcdom:".spiedigitallibrary.org",
+		        onsitedoms:new RegExp(".*spiedigitallibrary\.org,"),
+		        downloadtypes:"xls,doc,pdf,txt,csv,zip,docx,xlsx,mov,tiff,jpg,jpeg,mpeg",
+		        navigationtag:"div,table",
+		        trackevents:true,
+		        trimoffsiteparams:true,
+		        enabled:true,
+		        i18n:false,
+		        fpc:"WT_FPC",
+		        paidsearchparams:"gclid",
+		        splitvalue:"",
+		        preserve:true,
+                plugins:{
+                    //hm:{src:"//s.webtrends.com/js/webtrends.hm.js"}
+                }
+		        }).track();
+        };
+        (function(){
+            var s=document.createElement("script"); s.async=true; s.src="/Scripts/App/webtrends/webtrends.min.js";
+            var s2=document.getElementsByTagName("script")[0]; s2.parentNode.insertBefore(s,s2);
+        }());
+    </script>
+    <noscript>&lt;img alt="dcsimg" id="dcsimg" width="1" height="1" src="//datacoll.spie.org/dcsrefwbsblq1tcdick7hwcm6_7v5d/njs.gif?dcsuri=/nojavascript&amp;amp;WT.js=No&amp;amp;WT.tv=10.2.10&amp;amp;dcssip=www.spiedigitallibrary.org" /&gt;</noscript>
+    <!-- END OF SmartSource Data Collector TAG v10.4.1 -->
+
+
+
+<ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content searchTermAutoComplete" id="ui-id-1" tabindex="0" style="display: none;"></ul><span role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></span><ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content searchTermAutoComplete" id="ui-id-2" tabindex="0" style="display: none;"></ul><span role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></span><ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content searchTermAutoComplete" id="ui-id-3" tabindex="0" style="display: none;"></ul><span role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></span><ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content searchTermAutoComplete" id="ui-id-4" tabindex="0" style="display: none;"></ul><span role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></span><ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content searchTermAutoComplete" id="ui-id-5" tabindex="0" style="display: none;"></ul><span role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></span><div id="eid-chrome-extension-is-installed"></div></body></html>

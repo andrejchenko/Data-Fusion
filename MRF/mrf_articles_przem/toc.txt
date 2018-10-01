@@ -1,0 +1,31 @@
+General CRF/MRF theory
+============================
+*boykov-iccv-01.pdf: explanation how to pose binary image segmentation as an instance of the max-flow/min-cut problem
+*bvz-iccv99.pdf: describes moves for optimizing multi-label MRFs by iteratively solving binary problems: alpha expansion and alpha-beta swap
+*cuts.pdf: one of the original papers from the 80s that started the whole MRF applied to imagery frenzy...
+*mrf-survey.pdf: a review paper over applications of MRF in CV and techniques for optimization
+*eccv12-highorder.pdf: learning the parameters of CRFs for multilabel classification, where the potentials are not just pairwise but higher order. develops interesting ideas with the structured SVM for learning.
+*kz-pami04.pdf: here another classic paper which deals with the specific of energy minimization with graph cuts, and shows that only the class of submodular potentials can be optimally minimized, otherwise in general it is NP hard so approximations have to be used.
+*PAMI07-QPBO.pdf: here is another important paper which explains the QPBO (quadratic pseudoboolean optimization) method which can be used when the potentials are not submodular, to approximately optimize the energy. There are efficient open source implementations of this available. QPBO was also used in my own experiments.
+*05206689.pdf: some more complex stuff. shows some ideas for transforming higher order potentials (hyperedges with degree > 2) into standard pairwise potentials that can be optimized with QPBO
+*mrf reduction without aux var.pdf: more of the same, but without introducing auxiliary variables
+*roth-ijcv-preprint.pdf: field of experts model: another proposed higher order MRF for image segmentation
+*DRF_IJCV.pdf: discriminative random fields - plugging a discriminative model (e.g. logistic regression) into MRF for the unary potential
+*Exploiting Inference for Approximate Parameter Learning in Discri.pdf: more from the above author, extending the ideas a bit (other types of inference methods used: loopy belief propagation, iterated conditional modes etc.)
+*Markov_Random_Field_modeling_in_Image_Analysis_by_Stan_Z.Li.pdf: a book on the subject, but unfortunately a bit outdated (2001). Might still be useful for some fundamentals, though.
+*Contextual_Models_for_Object_Detection.pdf: also builds on the idea of having a discriminative model built into the MRF, in this case with boosting (cascade of weak learners)
+*komodakis crf dual decomposition.pdf: obtaining lower bounds on the energy by solving the dual problem of energy minimization. Used for training the CRF parameters.
+*crf l1 reg.pdf: CRFs meet lasso: learning sparse graphs with L1/lasso regularizers
+*2397-max-margin-markov-networks.pdf: one of the papers that started structured learning (SSVM/max margin) in MRFs
+*higher order random field potentials.pdf: a special case of higher order CRF potentials that is relatively easy to optimize.
+*MaGrimson_CVPR08.pdf: CRFs for adaptive fusion of contour and texture information. looks interesting, but didn't get very deep into it...
+*07730798.pdf: shows one of the current trends: combining CRFs with deep neural networks. In this case applied to hyperspectral imagery classification.
+
+CRF/MRF applications in RS:
+===========================
+*Volpi_Semantic_Segmentation_of_2015_CVPR_paper.pdf: segmentation of aerial imagery depicting urban areas, with the aforementioned structured learning (SSVM) of parameters
+*isprsannals-II-3-W4-271-2015.pdf: classification of point clouds using CRF
+*06130243.pdf: hierarchical CRF for RS image segmentation
+05549987.pdf: this one might be interesting because it uses combined SAR and imagery features
+
+PP_Seminar2016_crf.pdf: the slides from my presentation at the PhD seminar I had to prepare for the graduate school

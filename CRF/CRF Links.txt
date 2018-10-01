@@ -1,0 +1,2 @@
+http://www.inference.org.uk/hmw26/crf/
+https://stats.stackexchange.com/questions/58221/intutive-difference-between-hidden-markov-models-and-conditional-random-fields

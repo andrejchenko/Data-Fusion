@@ -1,0 +1,1 @@
+﻿$(document).ready(function(){$("a.internal-link").attr("href",function(i,val){return location.pathname+val;});});
